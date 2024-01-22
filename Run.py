@@ -34,17 +34,6 @@ def main():
     parser.add_argument('-tf', nargs='?', default='0', const='0', help="If tf = 1, takes RNA motif family information (family name and nname prefix) for train data from a file named 'Train_family_info.csv' inside 'data' folder. Otherwise uses the existing family information for training. Default: '0'.")
     parser.add_argument('-uf', nargs='?', default='0', const='0', help="This parameter is useful if there are some known family motifs in the unknown motif family folder. If uf = 1, takes RNA motif family information (family name and name prefix) for unknown motif data from a file named 'Unknown_motif_family_info.csv' inside 'data' folder. If all the motifs have unknown family, then use uf = 2. Otherwise, uses the existing family information for unknown motif data. Default: '0'.")
 
-
-
-
-    
-    
-    
-
-
-    
-
-
     
 
     try:
