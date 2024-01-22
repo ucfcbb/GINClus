@@ -5,7 +5,6 @@
 GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. The implementation can be divided into three major parts. (i) For the given motif locations, generating the graph representations for those motifs (ii) Generating motif subclusters based on their structural (base interaction and 3D structure) similarity (iii) For each subcluster, generating 3D diagrams of motifs side by side (This step is optional and can take comparatively longer to run)
 
 
-```
 #### Install python3:
 ```
 Debian/Ubuntu: apt install python3.8  
@@ -18,10 +17,9 @@ Fedora/CentOS: dnf install python3-pip
 ```
 #### Install required Python libraries:  
 It is required to install several python libraries to run RNA-NRD pipeline. These libraries are included in the [requirements.txt](requirements.txt) file. To install all required python libraries, please navigate to the RNA-NRD home directory in the terminal and execute the following command.
-
 ```
 pip3 install -r requirements.txt
-``` 
+```
 
 #### Python packages that should already exist:  
 os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, requests  
