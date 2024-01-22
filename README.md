@@ -63,6 +63,7 @@ os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, reques
            
 ### Important Notes
 *** The PDB files 6EK0 and 4P95 have recently become obsolette and have been removed from the motif location input file 'IL_cluster_input.csv'.
+*** Generating images for all the subclusters is optional and takes comparatively longer time generate all the images.
 
 ### Terms  
 Where appropriate, please cite the following GINClus paper:  
