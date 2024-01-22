@@ -1,0 +1,57 @@
+S1	S2	G-G	upward
+S1	S23	G-C	W/W	cis
+S2	S3	G-A	upward
+S2	S22	G-C	W/W	cis
+S2	S23	G-CFZ	outward
+S3	S4	A-G	upward
+S3	S21	A-U	W/W	cis
+S4	S5	G-G	upward
+S4	S20	G-C	W/W	cis
+S4	S21	G-UFT	outward
+S5	S6	G-UFT	upward
+S5	S19	G-A	S/H	trans
+S6	S17	UFT-G	inward
+S6	S18	U-A	W/H	trans
+S6	S19	UFT-A	outward
+S7	S8	G-CFZ	upward
+S8	S9	CFZ-UFT	upward
+S9	S10	UFT-CFZ	upward
+S9	S18	U-A	W/W	cis
+S10	S11	CFZ-CFZ	upward
+S10	S17	C-G	W/W	cis
+S11	S16	C-G	W/W	cis
+S16	S17	G-G	upward
+S17	S18	G-A	upward
+S18	S19	A-A	upward
+S19	S20	A-CFZ	upward
+U1	U2	G-G	upward
+U2	U23	G-CFZ	inward
+U3	U4	A-G	upward
+U3	U21	A-U	W/W	cis
+U3	U23	A-CFZ	outward
+U4	U5	G-G	upward
+U4	U20	G-C	W/W	cis
+U4	U21	G-UFT	outward
+U5	U6	G-UFT	upward
+U5	U19	G-A	S/H	trans
+U6	U18	U-A	W/H	trans
+U6	U19	UFT-A	outward
+U7	U8	G-CFZ	upward
+U8	U9	CFZ-UFT	upward
+U8	U19	C-A	W/S	trans
+U9	U10	UFT-CFZ	upward
+U9	U18	U-A	W/W	cis
+U10	U11	CFZ-CFZ	upward
+U10	U17	C-G	W/W	cis
+U11	U12	CFZ-G	upward
+U11	U16	C-G	W/W	cis
+U12	U15	G-A	S/W	trans
+U12	U16	G-G	outward
+U13	U14	A-A	upward
+U14	U15	A-A	inward
+U15	U16	A-G	outward
+U16	U17	G-G	upward
+U17	U18	G-A	upward
+U18	U19	A-A	upward
+U19	U20	A-CFZ	upward
+U21	U22	UFT-CFZ	upward

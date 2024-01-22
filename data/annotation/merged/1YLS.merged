@@ -1,0 +1,149 @@
+A101	A102	G-G	upward
+A101	B215	G-C	W/W	cis
+A101	B216	G-G	outward
+A101	B230	G-A	H/S	cis
+A102	B214	G-C	W/W	cis
+A102	B215	G-C	outward
+A103	A104	A-G	upward
+A103	B234	A-U	W/W	cis
+A104	A105	G-C	upward
+A104	B233	G-C	W/W	cis
+A104	B234	G-U	outward
+A105	B207	C-G	W/W	cis
+A106	A107	UMS-C	upward
+A106	B206	U-A	W/W	cis
+A106	B207	UMS-G	outward
+A107	A108	C-G	upward
+A107	B205	C-G	W/W	cis
+A108	A109	G-C	upward
+A108	B204	G-C	W/W	cis
+A108	B205	G-G	outward
+A109	A110	C-CSL	upward
+A109	B203	C-G	W/W	cis
+A110	A111	CSL-C	upward
+A110	B202	C-G	W/W	cis
+A110	B203	CSL-G	outward
+A111	B201	C-G	W/W	cis
+B201	B202	G-G	upward
+B202	B203	G-G	upward
+B203	B204	G-CSL	upward
+B205	B206	G-A	upward
+B206	B207	A-G	upward
+B207	B233	G-C	upward
+B208	B209	G-CSL	upward
+B208	B238	G-C	W/W	cis
+B209	B237	C-G	W/W	cis
+B210	B236	C-G	W/W	cis
+B210	B237	C-G	outward
+B211	B212	G-U	upward
+B211	B235	G-C	W/W	cis
+B211	B236	G-G	outward
+B212	B213	U-G	upward
+B212	B232	U-A	W/H	trans
+B213	B231	G-U	inward
+B213	B232	G-A	outward
+B214	B215	C-C	upward
+B214	B231	C-U	H/W	trans
+B215	B216	C-G	upward
+B216	B217	G-G	upward
+B216	B229	G-A	W/W	cis
+B217	B218	G-C	upward
+B217	B228	G-C	W/W	cis
+B217	B229	G-A	outward
+B218	B227	C-G	W/W	cis
+B219	B226	U-A	W/W	cis
+B219	B227	UMS-G	outward
+B220	B221	C-U	upward
+B220	B225	C-G	W/W	cis
+B221	B223	U-C	upward
+B221	B224	U-G	S/W	trans
+B221	B225	U-G	outward
+B224	B225	G-G	outward
+B225	B226	G-A	upward
+B226	B227	A-G	upward
+B227	B228	G-C	upward
+B228	B229	C-A	upward
+B229	B230	A-A	upward
+B230	B231	A-U	upward
+B232	B235	A-C	upward
+B233	B234	C-U	upward
+B235	B236	C-G	upward
+B236	B237	G-G	upward
+B237	B238	G-C	upward
+C101	C102	G-G	upward
+C101	D215	G-C	W/W	cis
+C101	D216	G-G	outward
+C101	D230	G-A	H/S	cis
+C102	D214	G-C	W/W	cis
+C102	D215	G-C	outward
+C103	C104	A-G	upward
+C103	D234	A-U	W/W	cis
+C104	C105	G-C	upward
+C104	D233	G-C	W/W	cis
+C104	D234	G-U	outward
+C105	D207	C-G	W/W	cis
+C106	C107	UMS-C	upward
+C106	D206	U-A	W/W	cis
+C106	D207	UMS-G	outward
+C107	C108	C-G	upward
+C107	D205	C-G	W/W	cis
+C108	C109	G-C	upward
+C108	D204	G-C	W/W	cis
+C108	D205	G-G	outward
+C109	C110	C-CSL	upward
+C109	D203	C-G	W/W	cis
+C110	C111	CSL-C	upward
+C110	D202	C-G	W/W	cis
+C110	D203	CSL-G	outward
+C111	D201	C-G	W/W	cis
+C111	D202	C-G	outward
+D201	D202	G-G	upward
+D202	D203	G-G	upward
+D203	D204	G-CSL	upward
+D205	D206	G-A	upward
+D206	D207	A-G	upward
+D207	D233	G-C	upward
+D208	D209	G-CSL	upward
+D208	D238	G-C	W/W	cis
+D209	D210	CSL-C	upward
+D209	D237	C-G	W/W	cis
+D210	D211	C-G	upward
+D210	D236	C-G	W/W	cis
+D210	D237	C-G	outward
+D211	D212	G-U	upward
+D211	D235	G-C	W/W	cis
+D211	D236	G-G	outward
+D212	D213	U-G	upward
+D212	D232	U-A	W/H	trans
+D213	D231	G-U	inward
+D213	D232	G-A	outward
+D214	D215	C-C	upward
+D214	D231	C-U	H/W	trans
+D215	D216	C-G	upward
+D216	D217	G-G	upward
+D216	D229	G-A	W/W	cis
+D217	D218	G-C	upward
+D217	D228	G-C	W/W	cis
+D217	D229	G-A	outward
+D218	D227	C-G	W/W	cis
+D219	D220	UMS-C	upward
+D219	D226	U-A	W/W	cis
+D219	D227	UMS-G	outward
+D220	D221	C-U	upward
+D220	D225	C-G	W/W	cis
+D221	D223	U-C	upward
+D221	D224	U-G	S/W	trans
+D221	D225	U-G	outward
+D223	D224	C-G	downward
+D224	D225	G-G	outward
+D225	D226	G-A	upward
+D226	D227	A-G	upward
+D227	D228	G-C	upward
+D228	D229	C-A	upward
+D229	D230	A-A	upward
+D230	D231	A-U	upward
+D232	D235	A-C	upward
+D233	D234	C-U	upward
+D235	D236	C-G	upward
+D236	D237	G-G	upward
+D237	D238	G-C	upward

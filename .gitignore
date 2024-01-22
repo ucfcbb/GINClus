@@ -1,0 +1,17 @@
+*.log
+*.pyc
+*.txt
+!requirements.txt
+*.bck
+
+!data/
+data/*
+!data/annotation/
+!data/fasta/
+!data/pdb_fasta/
+!data/loops/
+
+my_lib/DSSR/
+
+!my_lib/fonts/
+my_lib/fonts/*

@@ -1,0 +1,115 @@
+X14	X15	GDP-G	upward
+X15	X16	G-A	upward
+X15	X81	G-C	W/W	cis
+X16	X17	A-U	upward
+X16	X80	A-U	W/W	cis
+X17	X18	U-C	upward
+X17	X79	U-G	W/W	cis
+X18	X19	C-A	upward
+X18	X78	C-G	W/W	cis
+X18	X79	C-G	outward
+X19	X20	A-U	upward
+X19	X77	A-U	W/W	cis
+X19	X78	A-G	outward
+X20	X21	U-A	upward
+X20	X76	U-A	W/W	cis
+X21	X75	A-U	W/W	cis
+X21	X76	A-A	outward
+X22	X23	U-A	downward
+X22	X46	U-G	downward
+X22	X47	U-U	upward
+X22	X52	U-A	W/W	cis
+X22	X101	U-GUN	inward
+X23	X25	A-U	outward
+X23	X46	A-G	W/S	trans
+X24	X54	A-C	upward
+X24	X72	A-G	inward
+X24	X73	A-A	outward
+X25	X26	U-C	upward
+X25	X45	U-A	W/W	cis
+X25	X46	U-G	outward
+X26	X44	C-A	W/W	cis
+X27	X28	G-C	upward
+X27	X43	G-C	W/W	cis
+X27	X44	G-A	outward
+X28	X29	C-G	upward
+X28	X42	C-G	W/W	cis
+X29	X30	G-U	upward
+X29	X41	G-C	W/W	cis
+X29	X42	G-G	outward
+X30	X31	U-G	upward
+X30	X40	U-A	W/W	cis
+X31	X32	G-G	upward
+X31	X39	G-C	W/W	cis
+X31	X40	G-A	outward
+X32	X33	G-A	upward
+X32	X39	G-C	outward
+X33	X34	A-U	upward
+X33	X37	A-G	S/S	cis
+X33	X66	A-A	W/H	trans
+X34	X37	U-G	S/S	cis
+X34	X65	U-A	W/H	trans
+X35	X37	A-G	outward
+X35	X61	A-C	downward
+X35	X62	A-G	upward
+X35	X63	A-U	upward
+X35	X64	A-A	H/W	trans
+X37	X38	G-G	upward
+X37	X61	G-C	W/W	cis
+X38	X59	G-A	inward
+X38	X60	G-C	W/W	cis
+X38	X66	G-A	S/W	trans
+X38	X67	G-U	upward
+X39	X40	C-A	upward
+X40	X41	A-C	upward
+X41	X42	C-G	upward
+X42	X43	G-C	upward
+X44	X45	A-A	upward
+X45	X46	A-G	upward
+X46	X47	G-U	upward
+X46	X52	G-A	inward
+X46	X53	G-C	W/W	cis
+X47	X51	U-U	W/H	trans
+X49	X76	U-A	W/S	cis
+X50	X51	C-U	upward
+X50	X75	C-U	W/S	cis
+X51	X52	U-A	upward
+X51	X101	U-G	W/S	trans
+X52	X53	A-C	upward
+X54	X55	C-G	upward
+X54	X72	C-G	W/W	cis
+X55	X56	G-G	upward
+X55	X71	G-C	W/W	cis
+X55	X72	G-G	outward
+X56	X57	G-G	upward
+X56	X70	G-C	W/W	cis
+X56	X71	G-C	outward
+X57	X58	G-C	upward
+X57	X69	G-U	W/W	cis
+X57	X70	G-C	outward
+X58	X59	C-A	upward
+X58	X68	C-G	W/W	cis
+X59	X60	A-C	upward
+X59	X67	A-U	W/W	cis
+X59	X68	A-G	outward
+X60	X61	C-C	upward
+X61	X65	C-A	S/W	cis
+X62	X63	G-U	S/H	cis
+X63	X64	U-A	outward
+X64	X65	A-A	upward
+X65	X66	A-A	upward
+X66	X67	A-U	upward
+X68	X69	G-U	upward
+X69	X70	U-C	upward
+X70	X71	C-C	upward
+X71	X72	C-G	upward
+X73	X74	A-C	upward
+X74	X75	C-U	upward
+X74	X101	C-G	W/W	trans
+X75	X76	U-A	upward
+X75	X101	U-GUN	outward
+X76	X77	A-U	upward
+X77	X78	U-G	upward
+X78	X79	G-G	upward
+X79	X80	G-U	upward
+X80	X81	U-CCC	upward
