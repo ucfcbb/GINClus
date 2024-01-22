@@ -9,7 +9,8 @@ import tensorflow as tf
 import shutil
 import random
 import sys
-sys.path.append('src/scripts/')
+#sys.path.append('src/scripts/')
+sys.path.append('../../')
 import warnings
 warnings.simplefilter("ignore")
 
