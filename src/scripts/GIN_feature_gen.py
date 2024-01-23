@@ -9,12 +9,15 @@ import tensorflow as tf
 import shutil
 import random
 import sys
+
 sys.path.append('../../')
 from config import *
 
 sys.path.append('src/scripts/')
-import warnings
-warnings.simplefilter("ignore")
+
+
+# import warnings
+# warnings.simplefilter("ignore")
 
 
 
