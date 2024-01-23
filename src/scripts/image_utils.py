@@ -159,19 +159,22 @@ def generate_pymol_images(scl_wise_loop_dict, pdb_ind_list_dict, image_output_di
 
         pymol.cmd.hide()
         pymol.cmd.sync()
-        for i, (loop, filename) in enumerate(scl_wise_loop_dict[scl_id]):
-            loop_PDB = convert_a_loop_from_FASTA_to_PDB(loop)
-            pdb_load_name = loop_PDB.replace(':', '_')
-            pymol.cmd.show('cartoon', pdb_load_name)
-        pymol.cmd.zoom(reference_load_name)
-        image_fname = os.path.join(image_output_dir, 'subcluster_' + str(scl_id) + '_superimposed.png')
-        pymol.cmd.png(image_fname, 1200, 1200, dpi=300, ray=1, quiet=1)
-        pymol.cmd.sync()
+        
+        # superimposition image generate
+        # for i, (loop, filename) in enumerate(scl_wise_loop_dict[scl_id]):
+        #     loop_PDB = convert_a_loop_from_FASTA_to_PDB(loop)
+        #     pdb_load_name = loop_PDB.replace(':', '_')
+        #     pymol.cmd.show('cartoon', pdb_load_name)
+        # pymol.cmd.zoom(reference_load_name)
+        # image_fname = os.path.join(image_output_dir, 'subcluster_' + str(scl_id) + '_superimposed.png')
+        # pymol.cmd.png(image_fname, 1200, 1200, dpi=300, ray=1, quiet=1)
+        # pymol.cmd.sync()
 
 
     pymol.cmd.quit()
     for scl_id in scl_wise_loop_dict:    
-        wait_for_certain_files_to_be_generated(['subcluster_' + str(scl_id) + '.png', 'subcluster_' + str(scl_id) + '_superimposed.png'])
+        # wait_for_certain_files_to_be_generated(['subcluster_' + str(scl_id) + '.png', 'subcluster_' + str(scl_id) + '_superimposed.png'])
+        wait_for_certain_files_to_be_generated(['subcluster_' + str(scl_id) + '.png'])
         # print('deleting contents')
         remove_all_from_dir(os.path.join(image_output_dir, 'subcluster_' + str(scl_id)))
         delete_directory(os.path.join(image_output_dir, 'subcluster_' + str(scl_id)))
