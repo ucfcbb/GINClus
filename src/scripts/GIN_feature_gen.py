@@ -9,9 +9,14 @@ import tensorflow as tf
 import shutil
 import random
 import sys
+sys.path.append('../../')
+from config import *
+
 sys.path.append('src/scripts/')
 import warnings
 warnings.simplefilter("ignore")
+
+
 
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.losses import CategoricalCrossentropy
@@ -68,7 +73,7 @@ def generate_feature(INPUT_PATH, unknown_motif_family_list, output_path):
                 y = np.zeros(motif_family_no)
 
                 cur_filename = filename.split('.')[0]
-                motif_list.append(cur_filename)
+                
                 
                 ### Distance
                 e_distance = []  
@@ -82,6 +87,13 @@ def generate_feature(INPUT_PATH, unknown_motif_family_list, output_path):
                 PDB_loc = fin.readline()
                 FASTA_loc = fin.readline()
                 line = fin.readline()
+
+
+                cur_motif = FASTA_loc.split("\t")[0]
+                if input_index_type == 'pdb':
+                    cur_motif = PDB_loc.split("\t")[0]
+                    
+                motif_list.append(cur_motif)
                 
                 # Read Adjacency matrix
                 line = fin.readline()
@@ -203,6 +215,7 @@ def generate_feature(INPUT_PATH, unknown_motif_family_list, output_path):
     # Feature Generation
     ################################################################################
     ### Feature File Header
+    # header = ['Motif_location (' + input_index_type.upper() + ')']
     header = ['Motif_id']
     for i in range(1, channels+1):
         feature_head = 'Feature_' + str(i)

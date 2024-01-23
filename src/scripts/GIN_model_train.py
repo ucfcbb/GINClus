@@ -357,8 +357,6 @@ def run_model(train_data_path, family_list, idxs_par, save_par):
 
     print("Done. Test loss: {}. Test acc: {}".format(*np.mean(results, 0)))
    
-    y_test_val = []
-    y_pred_val = []
 
 
     ##############################################################################

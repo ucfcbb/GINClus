@@ -623,6 +623,7 @@ def create_required_directories(partial_pdbx_dir, output_dir):
     create_directory(pdb_fasta_mapping_dir)
     # create_directory(alignment_dir)
     create_directory(annotation_dir)
+    create_directory(output_dir)
     # create_directory(pickles_dir)
     # create_directory(subfamily_details_dir)
 

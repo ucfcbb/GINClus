@@ -2,6 +2,9 @@ import argparse
 import pandas as pd
 import numpy as np
 import sys
+sys.path.append('../../')
+from config import *
+
 sys.path.append('src/scripts/')
 
 from sklearn.cluster import KMeans
@@ -28,8 +31,7 @@ def run_subclustering(CLUSTER_NO, unknown_motif_family_list, output_path):
     
     for fam_ind in range(motif_family_no):
         label_mapping[unknown_motif_family_list[fam_ind]] = fam_ind
-    print(label_mapping)
-    
+   
     label_family = dict((v,k) for k,v in label_mapping.items())
 
     X['Family_label'] = X['Family_label'].map(label_mapping).astype('int32')
@@ -40,8 +42,8 @@ def run_subclustering(CLUSTER_NO, unknown_motif_family_list, output_path):
 
 
     ### Formatting Clustering + subclustering output
-    f_subclus = open(output_path + "Subcluster_output","w")
-    f_subclus.write("%s\t%s\t%s\t%s\n" % ('Motif_id', 'Cluster_id', 'Subcluster_id', 'Family_label'))
+    f_subclus = open(output_path + "Subcluster_output.csv","w")
+    f_subclus.write("%s\t%s\t%s\t%s\n" % ('Motif_location (' + input_index_type.upper() + ')', 'Cluster_id', 'Subcluster_id', 'Family_label'))
 
 
     ### Generate Subcluster for each cluster

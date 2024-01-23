@@ -2,6 +2,9 @@ import argparse
 import pandas as pd
 import numpy as np
 import sys
+sys.path.append('../../')
+from config import *
+
 sys.path.append('src/scripts/')
 
 from sklearn.cluster import KMeans
@@ -93,6 +96,7 @@ def run_kmeans(unknown_motif_family_list, CLUSTER_NO, output_path):
     
 
     ### Write header name
+    # Clus_out.write("%s\t" % ('Motif_location (' + input_index_type.upper() + ')'))
     Clus_out.write("%s\t" % ('Motif_id'))
     for feature in range(1, Feature_no+1):
         cur_feature = 'Feature_' + str(feature)
@@ -103,7 +107,11 @@ def run_kmeans(unknown_motif_family_list, CLUSTER_NO, output_path):
         
         Clus_out.write("%s\t" % (motif_ids[i]))
         feature_list = X1.iloc[[i]].to_string(header=None, index=False)
-        feature_list = feature_list.split(" ")
+        # print(feature_list)
+        feature_list = feature_list.split()
+
+        # print(feature_list)
+        # sys.exit()
 
         for f in feature_list:
             Clus_out.write("%s\t" % (f))
