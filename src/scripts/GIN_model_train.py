@@ -37,19 +37,22 @@ channels = 128  # Hidden units
 layers = 3  # GIN layers
 epochs = 1000  # Number of training epochs
 es_patience = 300  # Patience for early stopping
-test_percen = 0.937
-val_percen = 0.873
+##test_percen = 0.937
+##val_percen = 0.873
 
 
 
 ##############################################################################
 #Defining model
 ##############################################################################
-def run_model(train_data_path, family_list, idxs_par, save_par):
+def run_model(train_data_path, family_list, idxs_par, save_par, val_percen, test_percen):
     
     motif_family_no = len(family_list)
     family_dic = {}
     family_labels = {}
+
+    data_list = []
+    idxs = []
 
 
     for key in family_list:
@@ -63,6 +66,12 @@ def run_model(train_data_path, family_list, idxs_par, save_par):
     for fam_ind in range(len(family_list)):
         family_labels[family_list[fam_ind]] = fam_ind
 
+
+    for key in family_dic:
+        member_no = family_dic[key]
+        for i in range(member_no):
+            data_list.append(key + '_Graph_' + str(i))
+            
         
     ################################################################################
     # Defining MyDataset class
@@ -187,18 +196,66 @@ def run_model(train_data_path, family_list, idxs_par, save_par):
                 294, 162, 285, 170, 85, 46, 182, 229, 248, 133, 252, 10, 124, 166, 151, 273, 265, 69, 246, 219, 100, 90, 11, 271, 290, 56, 160, 187, 307, 148, 105, 297, 47, 256, 139, 274, 306, 138, 50, 269, 238, 298,\
                 5, 97, 268, 258, 17, 245, 178, 96, 150, 163, 134, 0, 296, 224, 164, 59, 181, 220, 8, 276, 209, 89, 52, 255, 12, 243, 108, 54, 95, 215, 136, 272, 74, 262, 51, 161, 28, 200,\
                 25, 3, 106, 128, 147, 23, 7, 82, 249, 16, 22, 43, 33, 226, 103, 303, 192, 101, 99, 198]
-    else:
+
+    elif int(idxs_par) == 1:
         idxs = np.random.permutation(len(dataset))
 
+    elif int(idxs_par) == 2:
+
+        train_list = []
+        val_list = []
+        test_list = []
+
+        train_val_test_file = open('data/Train_Validate_Test_data_list.csv', 'r')
+
+        line = train_val_test_file.readline()
         
-    split_va, split_te = int(val_percen * len(dataset)), int(test_percen * len(dataset))
+        ### Read motif graph file names for training data 
+        while(True):
+            line = train_val_test_file.readline()
+            if line[0] == "#":
+                break
+            motif_name = line.strip("\n")
+            train_list.append(motif_name)
+
+        ### Read motif graph file names for validation data
+        while(True):
+            line = train_val_test_file.readline()
+            if line[0] == "#":
+                break
+            motif_name = line.strip("\n")
+            val_list.append(motif_name)
+            
+        ### Read motif graph file names for test data
+        while(True):
+            line = train_val_test_file.readline()
+            if line == "":
+                break
+            motif_name = line.strip("\n")
+            test_list.append(motif_name)
+
+        train_val_test_file.close()
+
+
+        for motif in train_list:
+            idxs.append(data_list.index(motif))
+        for motif in val_list:
+            idxs.append(data_list.index(motif))
+        for motif in test_list:
+            idxs.append(data_list.index(motif))            
+
+    else:
+        print("Please provide valid value for parameter idx")
+
+
+        
+    split_va, split_te = int(float(val_percen) * len(dataset)), int(float(test_percen) * len(dataset))
     idx_tr, idx_va, idx_te = np.split(idxs, [split_va, split_te])
 
     dataset_tr = dataset[idx_tr]
     dataset_va = dataset[idx_va]
     dataset_te = dataset[idx_te]
-    print(dataset_tr, dataset_va, dataset_te)
-
+    
 
     ########################################################################################################
     tr_batch_size = len(dataset_tr) # Batch size
@@ -355,7 +412,7 @@ def run_model(train_data_path, family_list, idxs_par, save_par):
             )
         )
 
-    print("Done. Test loss: {}. Test acc: {}".format(*np.mean(results, 0)))
+    #print("Done. Test loss: {}. Test acc: {}".format(*np.mean(results, 0)))
    
 
 

@@ -28,8 +28,8 @@ from image_utils import *
 
 from GIN_model_train import *
 from GIN_feature_gen import *
-from Clustering_IL import *
-from Subclustering_IL import *
+from clustering_IL import *
+from subclustering_IL import *
 
 import collections
 
@@ -64,14 +64,14 @@ def main():
     parser.add_argument('-it', nargs='?', default='graphs_dir/Train_Graph_Data/', const='graphs_dir/Train_Graph_Data/', help="Path to the training graph data. Default: 'graphs_dir/Train_Graph_Data/'.")
     parser.add_argument('-il', nargs='?', default='graphs_dir/IL_Graph_Data/', const='graphs_dir/IL_Graph_Data/', help="Path to the graph data generated for unknown motifs. Default: 'graphs_dir/IL_Graph_Data/'.")
     parser.add_argument('-o', nargs='?', default='output/', const='output/', help="Path to the output files. Default: 'output/'.")
-    parser.add_argument('-t', nargs='?', default='True', const='True', help="Trains the model if t = True, else uses the previously trained model weight if t = False. Default: 'True'.")
-    parser.add_argument('-idx', nargs='?', default='0', const='0', help="Training data permutation. To use random data permutation, use '1'. To use data permutation used in the published research paper, use '0'. Default: '0'.")
+    parser.add_argument('-t', nargs='?', default=True, const=False, help="Trains the model if t = True, else uses the previously trained model weight. Default: 'True'.")
+    parser.add_argument('-idx', nargs='?', default='0', const='0', help="Data permutation for training, validation and testing data. To use data permutation used in the published research paper, use '0'. To use random data permutation, use '1'. To use data permutation input from file 'Train_Validate_Test_data_list.csv' in data folder, use '2'. Default: '0'.")
     parser.add_argument('-w', nargs='?', default='1', const='1', help="Parameter to save the model weight. Use '1' to save the new model weight. Otherwise, use '0'. Default: '1'.")
     parser.add_argument('-val', nargs='?', default='0.873', const='0.873', help="Sets the number '1-val' as the percentage of data that should be considered as validation data while training the model. Default: '0.873'.")
     parser.add_argument('-test', nargs='?', default='0.937', const='0.937', help="Sets the number '1-test' as the percentage of data that should be considered as test data while training the model. Default: '0.937'.")
 
-    parser.add_argument('-f', nargs='?', default='True', const='True', help="Generates features for unknown motifs if f = True, else uses the previously generated features if f = False. Default: 'True'.")
-    parser.add_argument('-c', nargs='?', default='True', const='True', help="Generates cluster output if t = True, else uses the previously generated clustering output if t = False. Default: 'True'.")
+    parser.add_argument('-f', nargs='?', default=True, const=False, help="Generates features for unknown motifs if f = True, else uses the previously generated features if f = False. Default: 'True'.")
+    parser.add_argument('-c', nargs='?', default=True, const=False, help="Generates cluster output if t = True, else uses the previously generated clustering output if t = False. Default: 'True'.")
     parser.add_argument('-k', nargs='?', default='400', const='400', help="Define the number of clusters (value of K) to be generated. Default: 400.")
 
     parser.add_argument('-tf', nargs='?', default='0', const='0', help="If tf = 1, takes RNA motif family information (family name and nname prefix) for train data from a file named 'Train_family_info.csv' inside 'data' folder. Otherwise uses the existing family information for training. Default: '0'.")
@@ -192,17 +192,17 @@ def main():
         unknown_motif_family_list = ['CL', 'EL', 'HT', 'L1C', 'KT', 'rKT', 'RS', 'SR', 'TL', 'TR', 'TS', 'IL']
         
         
-    
+    print('')
     ### Train the model
-    if train_model == 'True':
+    if train_model:
         print('Training GIN model...')
-        run_model(train_data_path, family_list, idxs_par, save_par)
+        run_model(train_data_path, family_list, idxs_par, save_par, val_percen, test_percen)
     else:
         print('Using model weight from previously trained model...')
     
 
     ### Generate features for unknown motifs
-    if gen_feature == 'True':
+    if gen_feature:
         print('Generating features for unknown motifs...')
         generate_feature(il_data_path, unknown_motif_family_list, output_path)
     else:
@@ -210,7 +210,7 @@ def main():
 
         
     ### Cluster unknown motifs
-    if cluster == 'True':
+    if cluster:
         print('Clustering unknown motifs...')
         run_kmeans(unknown_motif_family_list, CLUSTER_NO, output_path)
     else:
@@ -218,9 +218,9 @@ def main():
 
 
     ### Subcluster unknown motifs
+    print('Subclustering unknown motifs...')
     run_subclustering(CLUSTER_NO, unknown_motif_family_list, output_path)
 
-    # sys.exit()
 
     if generate_images == True:
         input_fname = os.path.join(output_path, 'Subcluster_output.csv')
@@ -294,8 +294,8 @@ def prepare_data_and_generate_graphs(user_input_fname, output_dir, partial_pdbx_
 
     loop_node_list_str = sorted(list(set(loop_node_list_str)))
 
-    logger.info(str(loop_count) + ' loops (' + str(len(loop_node_list_str)) + ' unique) found in ' + str(len(families)) + ' famil' + ('ies' if len(families) > 1 else 'y') + '.')
-    print('')
+    #logger.info(str(loop_count) + ' loops (' + str(len(loop_node_list_str)) + ' unique) found in ' + str(len(families)) + ' famil' + ('ies' if len(families) > 1 else 'y') + '.')
+    #print('')
 
     # get pdb and fasta files 
     # and
@@ -351,7 +351,7 @@ def get_reversed_interaction(interaction, interaction_type):
         sys.exit()
 
 def load_loop_data(loop):
-    # loop_dir = '/media/mahfuz/DATA13/Research/RNAMotifProfile3/RNAMotifContrast/data/loops/'
+    
     loop_fn = os.path.join(loop_dir, loop.replace(':', '_') + '.smf')
     fp = open(loop_fn)
     lines = fp.readlines()
