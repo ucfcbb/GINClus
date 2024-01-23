@@ -54,8 +54,8 @@ def main():
     parser = argparse.ArgumentParser(description='Cluster RNA motifs based on structural similarity')
 
     # Graph generating input params
-    parser.add_argument('-i1', nargs='?', default='supercluster_IL_FASTA.in', const='supercluster_IL_FASTA.in', help='Input file containing motifs for training')
-    parser.add_argument('-i2', nargs='?', default='IL_cluster_input_FASTA.csv', const='IL_cluster_input_FASTA.csv', help='Input file containing motifs for unknown families')
+    parser.add_argument('-i1', nargs='?', default='Train_motif_location_input.csv', const='Train_motif_location_input.csv', help='Input file containing motifs for training')
+    parser.add_argument('-i2', nargs='?', default='Unknown_motif_location_input.csv', const='Unknown_motif_location_input.csv', help='Input file containing motifs for unknown families')
     # parser.add_argument('-g', nargs='?', default='graphs_dir/', const='graphs_dir/', help='Directory to save the graph files')
     parser.add_argument('-e', nargs='?', default='0', const='5', help='How many residues to extend beyond loop boundary to generate the loop.cif file')
     parser.add_argument('-l', nargs='?', default=False, const=True, help='Use this parameter to have motif name in the graph file names.')
