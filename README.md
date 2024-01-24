@@ -2,7 +2,7 @@
 
 
 ## Install Instructions 
-GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. The implementation can be divided into three major parts. (i) For the given motif locations, generating the graph representations for those motifs (ii) Generating motif subclusters based on their structural (base interaction and 3D structure) similarity (iii) For each subcluster, generating 3D diagrams of motifs side by side (This step is optional and can take comparatively longer to run)
+GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. For giveen RNA motif locations (PDB or FASTA), GINClus first collects the RNA motifs and then generates the graph representation for each motif. Finally, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate 3D diagrams of motifs side by side for each subclusters (optional).  
 
 
 #### Install python3:
@@ -61,7 +61,8 @@ os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, reques
            
 ### Important Notes
 *** The PDB files 6EK0 and 4P95 have recently become obsolette and have been removed from the motif location input file 'IL_cluster_input.csv'.
-*** Generating images for all the subclusters is optional and takes comparatively longer time generate all the images.
+*** Generating images for all the subclusters is optional and can take comparatively longer to generate all the images.
+ 
 
 ### Terms  
 Where appropriate, please cite the following GINClus paper:  
