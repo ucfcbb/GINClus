@@ -78,6 +78,7 @@ pip3 install -r requirements.txt
            
 ### Important Notes
 *** The PDB files 6EK0 and 4P95 have recently become obsolette and have been removed from the motif location input file 'Unknown_motif_location_input.csv'.  
+*** Sample input files are provided inside folder [data('data/') and sample output files are provided inside folder [output](output/). The GINClus generated RNA motif subclustering [output](data/Subcluster_output.xlsx) originally used in the paper is provided inside [data](data/) folder as well.    
 *** Generating images for all the subclusters is optional and it takes comparatively longer to generate all the images.  
 *** Needs to download the open-source PyMOL to generate the subcluster images using GINClus.  
 
