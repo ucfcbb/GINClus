@@ -1,9 +1,9 @@
 # GINClus: RNA Structural Motif Clustering Using Graph Isomorphism Network
+GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. For given RNA motif locations (PDB or FASTA), GINClus first collects the RNA motifs and then generates the graph representation for each motif. Finally, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate 3D diagrams of motifs side by side for each subclusters (optional).  
+
 
 
 ## Install Instructions 
-GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. For giveen RNA motif locations (PDB or FASTA), GINClus first collects the RNA motifs and then generates the graph representation for each motif. Finally, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate 3D diagrams of motifs side by side for each subclusters (optional).  
-
 
 #### Install python3:
 ```
@@ -16,7 +16,7 @@ Debian/Ubuntu: apt install python3-pip
 Fedora/CentOS: dnf install python3-pip  
 ```
 #### Install required Python libraries:  
-It is required to install several python libraries to run RNA-NRD pipeline. These libraries are included in the [requirements.txt](requirements.txt) file. To install all required python libraries, please navigate to the RNA-NRD home directory in the terminal and execute the following command.
+The python libraries required to run GINClus are included in the [requirements.txt](requirements.txt) file. To install all required python libraries, please navigate to the GINClus home directory in the terminal and execute the following command.
 ```
 pip3 install -r requirements.txt
 ```
@@ -26,29 +26,46 @@ os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, reques
   
 *** If any of the above mentioned package doesn't exist, then please install with command 'pip3 install package-name' ***
 
+
+#### Install PyMOL (optional):  
+To generate subcluster images using GINClus, needs to install open-source PyMOL tool using the following instructions: 
+```
+pip3 install -r requirements.txt
+```
+
 ## Run Instructions
     
   
-**_Run command:_** python3 Run.py [-i 'Data.txt'] [-o1 'RNA-NRD_Dataset'] [-o2 'RNA-NRD_without_Organism_Division_Dataset'] [-t 80] [-r 4] [-a 80] [-org True]  
-**_Help command:_** python3 Run.py -h  
+**_Run command:_** python3 run.py [-i1 'Train_motif_location_input.csv'] [-i2 'Unknown_motif_location_input.csv'] [-it 'graphs_dir/Train_Graph_Data/'] [-il 'graphs_dir/IL_Graph_Data/'][-o 'output/'] [-e 0] [-t True] [-idx 0] [-w 1] [-val 0.873] [-test 0.973] [-f True] [-c 1] [-k 400] [-tf 0] [-uf 0] [-p False]  
+**_Help command:_** python3 run.py -h  
 **_Optional arguments:_** 
 ```
-  -h, --help  	show this help message and exit  
-  -it [IT]    	Path to the graph data generated for training motifs. Default:'graphs_dir/Train_Graph_Data/'.  
-  -il [IL]    	Path to the graph data generated for unknown internal loop (IL) motifs. Default:'graphs_dir/IL_Graph_Data/'.  
-  -o [O]      	Path to the output files. Default: 'output/'.  
-  -t [T]      	Trains the model if t = True, else uses the previously trained model weight if t = False. Default: 'True'.  
-  -idx [IDX]  	Training data permutation. To use random data permutation, use '1'. To use data permutation used in the published research paper, use '0'. Default: '0'. 
-  -w [W]      	Parameter to save the model weight. Use '1' to save the new model weight. Otherwise, use '0'. Default: '1'.  
-  -val [VAL]  	Sets the number '1-val' as the percentage of data that should be considered as validation data while training the model. Default: '0.873'.
-  -test [TEST]	Sets the number '1-test' as the percentage of data that should be considered as test data while training the model. Default: '0.937'.
-  -f [F]	Generates features for unknown motifs if f = True, else uses the previously generated features if f = False. Default: 'True'.
-  -c [C]	Generates cluster output if t = True, else uses the previously generated clustering output if t = False. Default: 'True'.
+  -h, --help  	show this help message and exit 
+  -i1 [I1]    	Input file containing motif locations for training. Default:'Train_motif_location_input.csv'.  
+  -i2 [I2]    	Input file containing motif locations for unknown families. Default:'Unknown_motif_location_input.csv'.
+  -it [IT]    	Path to the graphs generated for training motifs. Default:'graphs_dir/Train_Graph_Data/'.  
+  -il [IL]    	Path to the graphs generated for unknown motifs. Default:'graphs_dir/IL_Graph_Data/'.  
+  -o [O]      	Path to the output files. Default: 'output/'.   
+  -e [E]      	Number of extended residues beyond loop boundary to generate the loop.cif file. Default: 0.  
+  -l [L]	Use this parameter to have motif name in the graph file names. [remove it]
+  -t [T]      	Trains the model if t = True, else uses the previously trained model weight. Default: True. 
+  -idx [IDX]  	Divides data into train, validation and test. To divide according to the paper, set to '0'. To divide randomly, set to '1'. To define manually using the file 'Train_Validate_Test_data_list.csv' in data folder, set to '2'. Default: 0.
+  -w [W]      	Use '1' to save the new model weight, otherwise, use '0'. Default: '1'.  
+  -val [VAL]  	Set the percentage of validation data. Default: '0.873'.
+  -test [TEST]	Set the percentage of test data. Default: '0.937'.
+  -f [F]	Generates features for unknown motifs if f = True, else uses the previously generated features. Default: True.
+  -c [C]	Generates cluster output if t = True, else uses the previously generated clustering output. Default: True.
   -k [K]	Define the number of clusters (value of K) to be generated. Default: 400.
-  -tf [TF]	If tf = 1, takes RNA motif family information (family name and nname prefix) for train data from a file named 'Train_family_info.csv' inside 'data' folder. Otherwise uses the existing family information for training. Default: '0'.
-  -uf [UF]	This parameter is useful if there are some known family motifs in the unknown motif family folder. If uf = 1, takes RNA motif family information (family name and name prefix) for unknown motif data from a file named 'Unknown_motif_family_info.csv' inside 'data' folder. If all the motifs have unknown family, then use uf = 2. Otherwise, uses the existing family information for unknown motif data. Default: '0'.
+  -tf [TF]	If tf = 1, takes RNA motif family information for train data from 'Train_family_info.csv' in the data folder. Otherwise uses the existing family information. Default: 0.
+  -uf [UF]	If uf = 1, takes RNA motif family information for unknown motif data from 'Unknown_motif_family_info.csv' in the data folder. If uf = 2, only uses 'IL' as family name for unknown motifs. Otherwise, uses the existing family information for unknown motifs. Default: 0.
+  -p [P]	If True, generate PyMOL images for output clusteres. Default: False.
 	  
 ```
+
+**_Input:_** 
+1. Train_motif_location_input.csv: contains the locations of RNA motifs used for training. These locations can either be collected from FASTA files or PDB files.
+2. Unknown_motif_location_input.csv: Contains the locations of unknown RNA motifs (PDB or FASTA) used for training.
+
 
 **_Output:_** Generates the following output files inside the user defined output folder, default:'output' 
 1. Motif_Features_IL.tsv: contains the feature set generated for each motif. These features are used to cluster the RNA motifs.
@@ -60,9 +77,10 @@ os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, reques
 
            
 ### Important Notes
-*** The PDB files 6EK0 and 4P95 have recently become obsolette and have been removed from the motif location input file 'IL_cluster_input.csv'.
-*** Generating images for all the subclusters is optional and can take comparatively longer to generate all the images.
- 
+*** The PDB files 6EK0 and 4P95 have recently become obsolette and have been removed from the motif location input file 'Unknown_motif_location_input.csv'.
+*** Generating images for all the subclusters is optional and it takes comparatively longer to generate all the images.
+*** Needs to download the open-source PyMOL to generate the subcluster images using GINClus.
+
 
 ### Terms  
 Where appropriate, please cite the following GINClus paper:  
