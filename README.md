@@ -27,11 +27,9 @@ os, sys, shutil, math, random, subprocess, glob, time, argparse, logging, reques
 *** If any of the above mentioned package doesn't exist, then please install with command 'pip3 install package-name' ***
 
 
-#### Install PyMOL (optional):  
-To generate subcluster images using GINClus, needs to install open-source PyMOL tool using the following instructions: 
-```
-pip3 install -r requirements.txt
-```
+#### Install PyMOL (optional - required to generate images):  
+PyMOL can be installed directly by downloading the OS-specific version from https://pymol.org/. However, the open-source PyMOL can be obtained by compiling the source (Python 3.6+ is required). The steps to compile the PyMOL source is described in the [README-PyMOL-build](README-PyMOL-build.md) file.
+
 
 ## Run Instructions
     

@@ -58,7 +58,7 @@ def main():
     parser.add_argument('-i2', nargs='?', default='Unknown_motif_location_input.csv', const='Unknown_motif_location_input.csv', help='Input file containing motifs for unknown families')
     # parser.add_argument('-g', nargs='?', default='graphs_dir/', const='graphs_dir/', help='Directory to save the graph files')
     parser.add_argument('-e', nargs='?', default='0', const='5', help='How many residues to extend beyond loop boundary to generate the loop.cif file')
-    parser.add_argument('-l', nargs='?', default=False, const=True, help='Use this parameter to have motif name in the graph file names.')
+    # parser.add_argument('-l', nargs='?', default=False, const=True, help='Use this parameter to have motif name in the graph file names.')
 
     # GIN model run and clustering input params
     parser.add_argument('-it', nargs='?', default='graphs_dir/Train_Graph_Data/', const='graphs_dir/Train_Graph_Data/', help="Path to the training graph data. Default: 'graphs_dir/Train_Graph_Data/'.")
@@ -91,7 +91,8 @@ def main():
     user_input_fname2 = args.i2
     # graphs_output_dir = args.g
 
-    use_loop_name_in_graph_fname = args.l
+    # use_loop_name_in_graph_fname = args.l
+    use_loop_name_in_graph_fname = False
 
     loop_cif_extension = int(args.e)
 
@@ -134,9 +135,9 @@ def main():
     create_required_directories(partial_pdbx_dir, output_path)
 
     
-    prepare_data_and_generate_graphs(user_input_fname1, train_data_path, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname)
+    prepare_data_and_generate_graphs(user_input_fname1, train_data_path, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info)
     logger.info('Graph generation for training complete.')
-    prepare_data_and_generate_graphs(user_input_fname2, il_data_path, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname)
+    prepare_data_and_generate_graphs(user_input_fname2, il_data_path, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info)
     logger.info('Graph generation for input motifs complete.')
 
     # sys.exit()
@@ -231,7 +232,7 @@ def main():
     logger.info('Process complete.')
     logger.info('\nTotal time taken: ' + str(round((time.time() - process_start_time), 3)) + ' seconds.\n')
         
-def prepare_data_and_generate_graphs(user_input_fname, output_dir, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname):
+def prepare_data_and_generate_graphs(user_input_fname, output_dir, partial_pdbx_dir, loop_cif_extension, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info):
 
     input_fname = os.path.join(data_dir, user_input_fname)
     input_fname_base = os.path.basename(input_fname)
@@ -311,7 +312,7 @@ def prepare_data_and_generate_graphs(user_input_fname, output_dir, partial_pdbx_
     pickle.dump(families, f)
     f.close()
 
-    generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, output_dir, use_loop_name_in_graph_fname)
+    generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, output_dir, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info)
     
 
 def get_simplified_index(index_dict, index):
@@ -581,7 +582,7 @@ def get_pdb_index_list(lp):
 
     return pdb_index_list
 
-def generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, output_dir, use_loop_name_in_graph_fname=False):
+def generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, output_dir, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info):
     graph_list = []
     for encoded_fam_id, family_id in enumerate(families):
         # coord_dict = {}
@@ -705,7 +706,7 @@ def generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, outp
     # print(graph_list)
     # data = np.array(graph_list)
     # output_to_file(graph_list)
-    output_to_file_v2(user_input_fname, graph_list, output_dir, use_loop_name_in_graph_fname)
+    output_to_file_v2(user_input_fname, graph_list, output_dir, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info)
     # global dataset
     # dataset = MyDataset(graph_list)
 
@@ -714,18 +715,37 @@ def generate_graphs_for_loops(user_input_fname, families, partial_pdbx_dir, outp
 
     # print(Dataset(graph_list))
 
-def get_fam_id(loop, families):
+def get_fam_id(loop, families, provided_family_info, default_val='IL'):
     for fam_id in families:
         if loop in families[fam_id]:
             if fam_id.lower() in known_motif_shortcode:
                 return known_motif_shortcode[fam_id.lower()]
-    return 'IL'
+            if fam_id.lower() in provided_family_info:
+                return provided_family_info[fam_id.lower()]
+    return default_val
 
-def output_to_file_v2(user_input_fname, graph_list, graph_dir, use_loop_name_in_graph_fname):
+def output_to_file_v2(user_input_fname, graph_list, graph_dir, use_loop_name_in_graph_fname, train_family_info, unknown_motif_family_info):
 
     f = open(user_input_fname + ".pickle", 'rb')
     known_families = pickle.load(f)
     f.close()
+
+    provided_family_info = {}
+    if train_family_info == '1':
+        f = open(os.path.join(data_dir, 'Train_family_info.csv'))
+        lines = f.readlines()
+        f.close()
+        for line in lines[1:]:
+            long_name, short_name = line.strip().split(',')
+            provided_family_info[long_name.lower()] = short_name
+
+    if unknown_motif_family_info == '1':
+        f = open(os.path.join(data_dir, 'Unknown_motif_family_info.csv'))
+        lines = f.readlines()
+        f.close()
+        for line in lines[1:]:
+            long_name, short_name = line.strip().split(',')
+            provided_family_info[long_name.lower()] = short_name
 
     # graph_dir = os.path.join(data_dir, 'graphs_for_gnn_all_IL_ext5_in_coord')
     create_directory(graph_dir)
@@ -733,7 +753,7 @@ def output_to_file_v2(user_input_fname, graph_list, graph_dir, use_loop_name_in_
     graph_id = 0
     prev_fam_id = ''
     for i, (fam_id, loop, graph) in enumerate(graph_list):
-        known_fam_id = get_fam_id(loop, known_families)
+        known_fam_id = get_fam_id(loop, known_families, provided_family_info, 'IL')
         if fam_id == prev_fam_id:
             graph_id += 1
         else:

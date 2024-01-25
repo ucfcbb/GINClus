@@ -3,6 +3,7 @@
 *.txt
 !requirements.txt
 *.bck
+*.pickle
 
 !data/
 data/*
@@ -10,8 +11,8 @@ data/*
 !data/fasta/
 !data/pdb_fasta/
 !data/loops/
-!data/IL_cluster_input_FASTA.csv
-!data/supercluster_IL_FASTA.in
+!data/Unknown_motif_location_input.csv
+!data/Train_motif_location_input.csv
 
 my_lib/DSSR/
 
