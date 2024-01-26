@@ -143,6 +143,9 @@ cluster_source_dir = os.path.join(data_dir, 'supercluster_sources')
 base_path = os.path.dirname(root_dir)
 base_path_len = len(base_path) + 1
 
+train_data_path = 'graphs_dir/Train_Graph_Data/'
+il_data_path = 'graphs_dir/IL_Graph_Data/'
+
 ##### DIRECTORIES ##### DIRECTORIES ##### DIRECTORIES ##### DIRECTORIES ##### DIRECTORIES ##### DIRECTORIES #####
 
 pdbx_url = 'https://files.rcsb.org/download/'
