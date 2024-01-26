@@ -1,6 +1,6 @@
 # GINClus: RNA structural motif clustering using graph isomorphism network
 ###### Authors: Created by Nabila Shahnaz Khan in collaboration with Md Mahfuzur Rahaman and Shaojie Zhang
-GINClus source code is implemented using Python 3.8.10 and can be executed in 64-bit Linux machine. For given RNA motif locations (PDB or FASTA), GINClus first collects the RNA motifs and then generates the graph representation for each motif. Finally, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate side-by-side images of motifs for each subclusters (optional).  
+GINClus source code is implemented using __Python 3.8.10__ and can be executed in __64-bit Linux__ machine. For given RNA motif locations (PDB or FASTA), GINClus first collects the RNA motifs and then generates the graph representation for each motif. Finally, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate side-by-side images of motifs for each subclusters (optional).  
 
 
 
