@@ -81,7 +81,7 @@ def run_subclustering(CLUSTER_NO, unknown_motif_family_list, output_path):
         ################################################################################
         # Agglomerative Hierarchical Clustering for Normalized
         ################################################################################
-        agglo = AgglomerativeClustering(n_clusters=None, compute_full_tree='True', distance_threshold=5.4)
+        agglo = AgglomerativeClustering(n_clusters=None, compute_full_tree=True, distance_threshold=5.4)
         agglo_labels = agglo.fit_predict(X1_normalized)
         agglo_max_cluster = max(agglo_labels)
         agglo_cluster_list = list(np.arange(agglo_max_cluster+1))
