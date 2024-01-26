@@ -13,6 +13,9 @@ data/*
 !data/loops/
 !data/Unknown_motif_location_input.csv
 !data/Train_motif_location_input.csv
+!data/Train_family_info.csv
+!data/Unknown_motif_family_info.csv
+!data/Train_Validate_Test_data_list.csv
 
 my_lib/DSSR/
 
