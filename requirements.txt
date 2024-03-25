@@ -1,0 +1,11 @@
+biopython==1.76 ; python_version <= '2.7' or (python_version >= '3.0' and python_version <= '3.5')
+biopython>=1.77 ; (python_version > '2.7' and python_version < '3.0') or python_version > '3.5'
+matplotlib>=3.5.0
+future>=0.18.2
+numpy>=1.22.3
+Pillow>=6.2.2
+python-dateutil>=2.8.2
+tensorflow>=2.8.0
+pandas>=1.4.2
+spektral>=1.1.0
+scikit-learn>=1.0.1

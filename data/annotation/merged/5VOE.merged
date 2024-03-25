@@ -1,0 +1,44 @@
+A1	A2	G-A	upward
+A1	A36	G-U	W/W	cis
+A2	A3	A-G	upward
+A2	A35	A-U	W/W	cis
+A3	A4	G-A	upward
+A3	A34	G-C	W/W	cis
+A4	A5	A-G	upward
+A4	A33	A-U	W/W	cis
+A5	A6	G-CFL	upward
+A5	A32	G-C	W/W	cis
+A6	A31	C-G	W/W	cis
+A7	A8	CFL-CFL	upward
+A7	A31	CFL-G	outward
+A8	A9	CFL-CFL	upward
+A9	A25	CFL-G	inward
+A9	A27	C-C	W/H	trans
+A10	A21	A-A	downward
+A11	A12	G-CFL	upward
+A11	A27	G-C	W/W	cis
+A12	A26	C-G	W/W	cis
+A13	A14	G-A	upward
+A13	A24	G-U	W/W	cis
+A13	A26	G-G	outward
+A14	A15	A-G	upward
+A14	A23	A-U	W/W	cis
+A15	A16	G-A	upward
+A15	A22	G-C	W/W	cis
+A15	A23	G-UFT	outward
+A16	A17	A-UFT	inward
+A16	A20	A-U	W/H	cis
+A17	A19	U-A	H/H	cis
+A19	A20	A-UFT	downward
+A20	A22	UFT-CFL	outward
+A22	A23	CFL-UFT	upward
+A23	A24	UFT-UFT	upward
+A24	A25	UFT-G	upward
+A26	A27	G-CFL	upward
+A28	A29	CFL-CFL	upward
+A29	A30	CFL-CFL	upward
+A31	A32	G-CFL	upward
+A32	A33	CFL-UFT	upward
+A33	A34	UFT-CFL	upward
+A34	A35	CFL-UFT	upward
+A35	A36	UFT-UFT	upward

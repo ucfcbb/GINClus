@@ -1,0 +1,204 @@
+U88	U89	U-U	upward
+U88	U106	U-A	W/W	cis
+U89	U90	U-C	upward
+U89	U105	U-A	W/W	cis
+U90	U91	C-U	upward
+U90	U104	C-G	W/W	cis
+U90	U105	C-A	outward
+U91	U92	U-U	upward
+U91	U103	U-A	W/W	cis
+U91	U104	U-G	outward
+U92	U93	U-G	upward
+U92	U102	U-C	W/W	cis
+U92	U103	U-A	outward
+U93	U94	G-C	upward
+U93	U101	G-C	W/W	cis
+U93	U102	G-C	outward
+U94	U95	C-C	inward
+U95	U96	C-U	downward
+U96	U97	U-U	upward
+U96	W30	U-G	W/W	cis
+U97	U98	U-U	upward
+U97	W29	U-U	W/W	cis
+U97	W30	U-G	outward
+U98	U99	U-U	upward
+U98	W29	U-U	outward
+U99	U100	U-A	upward
+U100	U101	A-C	upward
+U101	U102	C-C	upward
+U102	U103	C-A	upward
+U103	U104	A-G	upward
+U104	U105	G-A	upward
+U105	U106	A-A	upward
+U106	U107	A-C	upward
+V1	V2	A-U	upward
+V1	W80	A-U	W/W	cis
+V1	W81	A-G	outward
+V2	V3	U-C	upward
+V2	W79	U-A	W/W	cis
+V3	V4	C-C	upward
+V3	W78	C-G	W/W	cis
+V3	W79	C-A	outward
+V4	W77	C-G	W/W	cis
+V4	W78	C-G	outward
+V5	V6	U-U	upward
+V5	W76	U-A	W/W	cis
+V5	W77	U-G	outward
+V6	V7	U-A	upward
+V6	W75	U-A	W/W	cis
+V7	V8	A-U	upward
+V7	W74	A-U	W/W	cis
+V7	W75	A-A	outward
+V8	W73	U-A	W/W	cis
+V9	V10	G-C	upward
+V9	W72	G-C	W/W	cis
+V9	W73	G-A	outward
+V10	V11	C-A	upward
+V10	W71	C-G	W/W	cis
+V11	V12	A-C	upward
+V11	W70	A-U	W/W	cis
+V11	W71	A-G	outward
+V12	V13	C-G	upward
+V12	W69	C-C	W/W	cis
+V12	W70	C-U	outward
+V13	V14	G-G	upward
+V13	W68	G-C	W/W	cis
+V13	W69	G-C	outward
+V14	V15	G-G	upward
+V14	W67	G-C	W/W	cis
+V14	W68	G-C	outward
+V15	V16	G-A	upward
+V15	W66	G-C	W/W	cis
+V15	W67	G-C	outward
+V16	V17	A-A	upward
+V16	W65	A-U	W/W	cis
+V17	V18	A-A	upward
+V17	W64	A-U	W/W	cis
+V17	W65	A-U	outward
+V18	V56	A-U	inward
+V18	W63	A-G	W/W	cis
+V20	V21	A-C	upward
+V20	V53	A-U	W/W	cis
+V20	V54	A-U	outward
+V21	V22	C-G	upward
+V21	V52	C-G	W/W	cis
+V22	V23	G-C	upward
+V22	V51	G-U	W/W	cis
+V22	V52	G-G	outward
+V23	V24	C-A	upward
+V23	V50	C-G	W/W	cis
+V24	V26	A-A	upward
+V24	V49	A-U	W/W	cis
+V24	V50	A-G	outward
+V26	V27	A-U	upward
+V26	V48	A-U	W/W	cis
+V27	V28	U-C	upward
+V27	V47	U-A	W/W	cis
+V28	V29	C-A	upward
+V28	V46	C-G	W/W	cis
+V29	V46	A-G	outward
+V30	V32	G-G	upward
+V30	V45	G-A	inward
+V32	V44	G-G	inward
+V32	V45	G-A	S/H	trans
+V33	V34	A-G	upward
+V33	V44	A-G	H/S	trans
+V33	V45	A-A	outward
+V34	V35	G-G	upward
+V34	V43	G-C	W/W	cis
+V35	V36	G-A	upward
+V35	V42	G-C	W/W	cis
+V35	V43	G-C	outward
+V36	V37	A-U	upward
+V36	V41	A-U	W/W	cis
+V36	V42	A-C	outward
+V37	V39	U-C	upward
+V37	V40	U-G	S/W	trans
+V39	V40	C-G	downward
+V40	V41	G-U	outward
+V41	V42	U-C	upward
+V42	V43	C-C	upward
+V43	V44	C-G	upward
+V46	V47	G-A	upward
+V47	V48	A-U	upward
+V48	V49	U-U	upward
+V49	V50	U-G	upward
+V50	V51	G-U	upward
+V52	V53	G-U	upward
+V53	V54	U-U	upward
+V57	W62	U-A	W/W	cis
+V57	W63	U-G	outward
+V58	V59	G-C	upward
+V58	W61	G-C	W/W	cis
+V58	W62	G-A	outward
+V59	V60	C-U	upward
+V59	W60	C-G	W/W	cis
+V60	V61	U-G	upward
+V60	W59	U-A	W/W	cis
+V60	W60	U-G	outward
+V61	V62	G-G	upward
+V61	W58	G-C	W/W	cis
+V61	W59	G-A	outward
+V62	V63	G-U	upward
+V62	W57	G-U	W/W	cis
+V62	W58	G-C	outward
+V63	V64	U-U	upward
+V63	W56	U-A	W/W	cis
+V64	V65	U-G	upward
+V64	W55	U-G	W/W	cis
+V65	V66	G-A	upward
+V65	W55	G-G	outward
+W26	W27	A-U	upward
+W29	U97	U-U	W/W	cis
+W29	W30	U-G	upward
+W30	U96	G-U	W/W	cis
+W30	U97	G-U	outward
+W33	W34	C-A	upward
+W33	W48	C-C	H/S	trans
+W33	W49	C-A	outward
+W33	W50	C-G	W/W	cis
+W34	W35	A-A	upward
+W34	W47	A-A	H/H	trans
+W34	W50	A-G	outward
+W35	W36	A-U	upward
+W35	W46	A-U	W/W	cis
+W36	W37	U-U	upward
+W36	W45	U-A	W/W	cis
+W37	W38	U-U	upward
+W37	W44	U-A	W/W	cis
+W37	W45	U-A	outward
+W38	W44	U-A	outward
+W44	W45	A-A	upward
+W45	W46	A-U	upward
+W46	W47	U-A	inward
+W47	W48	A-C	outward
+W49	W50	A-G	downward
+W55	W56	G-A	upward
+W56	W57	A-U	upward
+W57	W58	U-C	upward
+W58	W59	C-A	upward
+W59	W60	A-G	upward
+W60	W61	G-C	upward
+W61	W62	C-A	upward
+W62	W63	A-G	upward
+W63	W64	G-U	upward
+W64	W65	U-U	upward
+W65	W66	U-C	upward
+W66	W67	C-C	upward
+W67	W68	C-C	upward
+W68	W69	C-C	upward
+W69	W70	C-U	upward
+W70	W71	U-G	upward
+W71	W72	G-C	upward
+W72	W73	C-A	upward
+W73	W74	A-U	upward
+W74	W75	U-A	upward
+W75	W76	A-A	upward
+W76	W77	A-G	upward
+W77	W78	G-G	upward
+W78	W79	G-A	upward
+W79	W80	A-U	upward
+W81	W82	G-A	upward
+W83	W84	A-C	upward
+W84	W85	C-C	upward
+W86	W87	G-U	upward
