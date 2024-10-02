@@ -1,0 +1,656 @@
+'1'1	'1'2	A-U	upward
+'1'1	I8	A-U	W/W	cis
+'1'1	I9	A-A	outward
+'1'2	'1'3	U-A	upward
+'1'3	'1'4	A-C	upward
+'1'3	I6	A-U	W/W	cis
+'1'4	'1'5	C-PSU	upward
+'1'4	I5	C-G	W/W	cis
+'1'5	'1'6	PSU-PSU	upward
+'1'5	I5	PSU-G	outward
+'1'6	I3	P-A	W/W	cis
+'1'7	'1'8	A-C	upward
+'1'7	I2	A-U	W/W	cis
+'1'7	I3	A-A	outward
+'1'8	'1'9	C-C	upward
+'1'8	I1	C-G	W/W	cis
+'1'9	'1'10	C-U	upward
+'1'9	I0	C-G	W/W	cis
+'1'9	I1	C-G	outward
+'1'10	I-1	U-A	W/W	cis
+'1'10	I0	U-G	outward
+'1'12	'1'13	A-A	upward
+'1'12	'1'549	A-U	W/W	cis
+'1'12	'1'550	A-A	outward
+'1'13	'1'14	A-G	upward
+'1'13	'1'548	A-U	W/W	cis
+'1'13	'1'549	A-U	outward
+'1'14	'1'15	G-A	upward
+'1'14	'1'547	G-C	W/W	cis
+'1'14	'1'548	G-U	outward
+'1'15	'1'16	A-U	upward
+'1'15	'1'546	A-U	W/W	cis
+'1'16	'1'168	U-C	upward
+'1'16	'1'545	U-A	W/W	cis
+'1'17	'1'18	A-U	upward
+'1'17	'1'45	A-U	W/W	cis
+'1'17	'1'167	A-G	downward
+'1'18	'1'19	U-C	upward
+'1'18	'1'44	U-A	W/W	cis
+'1'19	'1'20	C-A	upward
+'1'19	'1'43	C-G	W/W	cis
+'1'20	'1'21	A-G	upward
+'1'20	'1'42	A-U	W/W	cis
+'1'20	'1'43	A-G	outward
+'1'21	'1'22	G-A	upward
+'1'21	'1'41	G-C	W/W	cis
+'1'21	'1'42	G-U	outward
+'1'22	'1'23	A-G	upward
+'1'22	'1'39	A-U	W/W	cis
+'1'22	'1'41	A-C	outward
+'1'23	'1'24	G-G	upward
+'1'23	'1'38	G-C	W/W	cis
+'1'23	'1'39	G-U	outward
+'1'24	'1'25	G-A	upward
+'1'24	'1'37	G-C	W/W	cis
+'1'24	'1'38	G-C	outward
+'1'25	'1'36	A-U	W/W	cis
+'1'28	'1'29	U-C	S/H	cis
+'1'31	'1'32	A-G	inward
+'1'33	'1'34	A-A	upward
+'1'34	'1'35	A-G	upward
+'1'35	'1'36	G-U	upward
+'1'36	'1'37	U-C	upward
+'1'37	'1'38	C-C	upward
+'1'38	'1'39	C-U	upward
+'1'39	'1'41	U-C	upward
+'1'41	'1'42	C-U	upward
+'1'42	'1'43	U-G	upward
+'1'43	'1'44	G-A	upward
+'1'44	'1'45	A-U	upward
+'1'45	'1'46	U-C	upward
+'1'46	'1'47	C-A	upward
+'1'46	'1'167	C-G	W/W	cis
+'1'47	'1'48	A-A	upward
+'1'47	'1'166	A-U	W/W	cis
+'1'47	'1'167	A-G	outward
+'1'48	'1'49	A-A	upward
+'1'48	'1'165	A-U	W/W	cis
+'1'48	'1'166	A-U	outward
+'1'49	'1'50	A-C	upward
+'1'49	'1'164	A-U	W/W	cis
+'1'49	'1'165	A-U	outward
+'1'50	'1'51	C-A	upward
+'1'50	'1'163	C-G	W/W	cis
+'1'51	'1'52	A-U	upward
+'1'51	'1'162	A-U	W/W	cis
+'1'51	'1'163	A-G	outward
+'1'52	'1'53	U-G	upward
+'1'52	'1'161	U-G	W/W	cis
+'1'53	'1'54	G-C	upward
+'1'53	'1'160	G-C	W/W	cis
+'1'53	'1'161	G-G	outward
+'1'54	'1'56	C-C	upward
+'1'54	'1'159	C-G	W/W	cis
+'1'56	'1'57	C-U	upward
+'1'56	'1'158	C-G	W/W	cis
+'1'56	'1'159	C-G	outward
+'1'57	'1'58	U-U	upward
+'1'57	'1'157	U-A	W/W	cis
+'1'57	'1'158	U-G	outward
+'1'58	'1'59	U-C	upward
+'1'58	'1'156	U-A	W/W	cis
+'1'58	'1'157	U-A	outward
+'1'59	'1'60	C-C	upward
+'1'59	'1'155	C-G	W/W	cis
+'1'60	'1'134	C-G	inward
+'1'61	'1'68	A-G	S/W	cis
+'1'61	'1'133	A-G	downward
+'1'61	'1'135	A-U	upward
+'1'67	'1'68	A-G	upward
+'1'68	'1'69	G-A	upward
+'1'69	'1'70	A-A	upward
+'1'69	'1'132	A-U	W/W	cis
+'1'69	'1'133	A-G	outward
+'1'70	'1'71	A-G	upward
+'1'70	'1'131	A-U	W/W	cis
+'1'70	'1'132	A-U	outward
+'1'71	'1'72	G-G	upward
+'1'71	'1'130	G-C	W/W	cis
+'1'71	'1'131	G-U	outward
+'1'72	'1'73	G-A	upward
+'1'72	'1'129	G-C	W/W	cis
+'1'72	'1'130	G-C	outward
+'1'73	'1'75	A-G	upward
+'1'73	'1'128	A-U	W/W	cis
+'1'75	'1'76	G-U	upward
+'1'75	'1'127	G-C	W/W	cis
+'1'75	'1'128	G-U	outward
+'1'76	'1'77	U-U	upward
+'1'76	'1'126	U-A	W/W	cis
+'1'77	'1'78	U-A	inward
+'1'77	'1'125	U-A	W/W	cis
+'1'77	'1'126	U-A	outward
+'1'78	'1'80	A-G	outward
+'1'78	'1'124	A-A	W/W	trans
+'1'79	'1'118	A-U	outward
+'1'80	'1'81	G-C	upward
+'1'80	'1'123	G-C	W/W	cis
+'1'80	'1'124	G-A	outward
+'1'81	'1'82	C-A	upward
+'1'81	'1'122	C-G	W/W	cis
+'1'82	'1'83	A-U	upward
+'1'82	'1'121	A-U	W/W	cis
+'1'82	'1'122	A-G	outward
+'1'83	'1'84	U-U	upward
+'1'83	'1'120	U-A	W/W	cis
+'1'84	'1'85	U-U	upward
+'1'84	'1'119	U-G	W/W	cis
+'1'85	'1'86	U-A	upward
+'1'85	'1'117	U-U	W/W	trans
+'1'86	'1'117	A-U	downward
+'1'87	'1'88	U-C	upward
+'1'87	'1'111	U-A	W/W	cis
+'1'87	'1'112	U-A	outward
+'1'88	'1'89	C-A	upward
+'1'88	'1'110	C-G	W/W	cis
+'1'89	'1'90	A-U	upward
+'1'89	'1'109	A-U	W/W	cis
+'1'89	'1'110	A-G	outward
+'1'90	'1'91	U-U	upward
+'1'91	'1'92	U-G	upward
+'1'91	'1'107	U-A	W/W	cis
+'1'92	'1'93	G-A	upward
+'1'92	'1'106	G-C	W/W	cis
+'1'92	'1'107	G-A	outward
+'1'93	'1'94	A-A	upward
+'1'93	'1'105	A-U	W/W	cis
+'1'94	'1'95	A-C	upward
+'1'94	'1'104	A-U	W/W	cis
+'1'94	'1'105	A-U	outward
+'1'95	'1'103	C-G	W/W	cis
+'1'103	'1'104	G-U	upward
+'1'104	'1'105	U-U	upward
+'1'105	'1'106	U-C	upward
+'1'106	'1'107	C-A	upward
+'1'107	'1'108	A-U	upward
+'1'108	'1'109	U-U	upward
+'1'109	'1'110	U-G	upward
+'1'110	'1'111	G-A	upward
+'1'111	'1'112	A-A	upward
+'1'115	'1'116	C-A	upward
+'1'116	'1'119	A-G	W/S	cis
+'1'117	'1'119	U-G	outward
+'1'119	'1'120	G-A	upward
+'1'120	'1'121	A-U	upward
+'1'121	'1'122	U-G	upward
+'1'122	'1'123	G-C	upward
+'1'123	'1'124	C-A	upward
+'1'124	'1'125	A-A	upward
+'1'125	'1'126	A-A	upward
+'1'126	'1'127	A-C	upward
+'1'127	'1'128	C-U	upward
+'1'128	'1'129	U-C	upward
+'1'129	'1'130	C-C	upward
+'1'130	'1'131	C-U	upward
+'1'131	'1'132	U-U	upward
+'1'132	'1'133	U-G	upward
+'1'134	'1'136	G-C	outward
+'1'134	'1'153	G-C	H/W	cis
+'1'134	'1'154	G-G	H/W	cis
+'1'136	'1'137	C-A	upward
+'1'136	'1'152	C-G	W/W	cis
+'1'137	'1'138	A-C	upward
+'1'137	'1'152	A-G	outward
+'1'138	'1'139	C-A	upward
+'1'143	'1'144	A-C	upward
+'1'152	'1'153	G-C	upward
+'1'153	'1'154	C-G	upward
+'1'154	'1'155	G-G	upward
+'1'155	'1'156	G-A	upward
+'1'156	'1'157	A-A	upward
+'1'157	'1'158	A-G	upward
+'1'158	'1'159	G-G	upward
+'1'159	'1'160	G-C	upward
+'1'160	'1'161	C-G	upward
+'1'161	'1'162	G-U	upward
+'1'162	'1'163	U-G	upward
+'1'163	'1'164	G-U	upward
+'1'164	'1'165	U-U	upward
+'1'165	'1'166	U-U	upward
+'1'166	'1'167	U-G	upward
+'1'168	'1'169	C-U	upward
+'1'168	'1'544	C-G	W/W	cis
+'1'168	'1'545	C-A	outward
+'1'169	'1'170	U-G	upward
+'1'169	'1'543	U-G	W/W	cis
+'1'169	'1'544	U-G	outward
+'1'170	'1'171	G-A	upward
+'1'170	'1'543	G-G	outward
+'1'171	'1'172	A-C	upward
+'1'171	'1'540	A-G	W/W	cis
+'1'171	'1'542	A-U	W/W	cis
+'1'172	'1'173	C-G	upward
+'1'172	'1'539	C-G	W/W	cis
+'1'172	'1'540	C-G	outward
+'1'173	'1'538	G-C	W/W	cis
+'1'173	'1'539	G-G	outward
+'1'181	'1'182	U-C	upward
+'1'181	'1'308	U-A	W/W	cis
+'1'181	'1'309	U-G	outward
+'1'181	'1'532	U-U	downward
+'1'182	'1'183	C-C	upward
+'1'182	'1'307	C-G	W/W	cis
+'1'183	'1'184	C-C	upward
+'1'183	'1'306	C-G	W/W	cis
+'1'183	'1'307	C-G	outward
+'1'184	'1'185	C-U	upward
+'1'184	'1'305	C-G	W/W	cis
+'1'184	'1'306	C-G	outward
+'1'185	'1'186	U-U	upward
+'1'185	'1'304	U-G	W/W	cis
+'1'185	'1'305	U-G	outward
+'1'186	'1'303	U-A	W/W	cis
+'1'186	'1'304	U-G	outward
+'1'187	'1'188	G-U	upward
+'1'187	'1'251	G-C	W/W	cis
+'1'187	'1'252	G-C	outward
+'1'188	'1'189	U-U	upward
+'1'188	'1'250	U-G	W/W	cis
+'1'189	'1'190	U-U	upward
+'1'189	'1'249	U-G	W/W	cis
+'1'189	'1'250	U-G	outward
+'1'190	'1'191	U-C	upward
+'1'190	'1'248	U-G	W/W	cis
+'1'190	'1'249	U-G	outward
+'1'191	'1'192	C-A	upward
+'1'191	'1'247	C-G	W/W	cis
+'1'191	'1'248	C-G	outward
+'1'192	'1'193	A-A	upward
+'1'192	'1'246	A-U	W/W	cis
+'1'192	'1'247	A-G	outward
+'1'193	'1'194	A-U	upward
+'1'193	'1'245	A-U	W/W	cis
+'1'193	'1'246	A-U	outward
+'1'194	'1'195	U-C	upward
+'1'195	'1'196	C-A	upward
+'1'195	'1'243	C-U	W/W	cis
+'1'196	'1'197	A-U	upward
+'1'196	'1'242	A-U	W/W	cis
+'1'196	'1'243	A-U	outward
+'1'197	'1'198	U-U	upward
+'1'197	'1'241	U-A	W/W	cis
+'1'198	'1'199	U-G	upward
+'1'198	'1'240	U-G	W/W	cis
+'1'198	'1'241	U-A	outward
+'1'199	'1'200	G-G	upward
+'1'199	'1'239	G-U	W/W	cis
+'1'199	'1'240	G-G	outward
+'1'200	'1'201	G-U	upward
+'1'200	'1'238	G-C	W/W	cis
+'1'200	'1'239	G-U	outward
+'1'201	'1'202	U-U	upward
+'1'201	'1'237	U-A	W/W	cis
+'1'202	'1'236	U-A	W/W	cis
+'1'236	'1'237	A-A	upward
+'1'237	'1'238	A-C	upward
+'1'238	'1'239	C-U	upward
+'1'239	'1'240	U-G	upward
+'1'240	'1'241	G-A	upward
+'1'241	'1'242	A-U	upward
+'1'242	'1'243	U-U	upward
+'1'243	'1'244	U-U	upward
+'1'244	'1'245	U-U	upward
+'1'245	'1'246	U-U	upward
+'1'246	'1'247	U-G	upward
+'1'247	'1'248	G-G	upward
+'1'248	'1'249	G-G	upward
+'1'249	'1'250	G-G	upward
+'1'250	'1'251	G-C	upward
+'1'251	'1'252	C-C	upward
+'1'252	'1'253	C-C	upward
+'1'254	'1'256	U-U	upward
+'1'255	'1'259	U-U	downward
+'1'261	'1'262	C-U	upward
+'1'261	'1'276	C-G	W/W	cis
+'1'261	'1'303	C-A	outward
+'1'262	'1'263	U-U	upward
+'1'262	'1'275	U-A	W/W	cis
+'1'262	'1'276	U-G	outward
+'1'263	'1'264	U-C	upward
+'1'263	'1'274	U-A	W/W	cis
+'1'263	'1'275	U-A	outward
+'1'264	'1'265	C-U	upward
+'1'264	'1'273	C-G	W/W	cis
+'1'265	'1'272	U-A	W/W	cis
+'1'265	'1'273	U-G	outward
+'1'266	'1'272	G-A	outward
+'1'272	'1'273	A-G	upward
+'1'273	'1'274	G-A	upward
+'1'274	'1'275	A-A	upward
+'1'275	'1'276	A-G	upward
+'1'276	'1'277	G-U	upward
+'1'280	'1'281	G-A	upward
+'1'280	'1'302	G-U	W/W	cis
+'1'281	'1'282	A-C	upward
+'1'281	'1'301	A-U	W/W	cis
+'1'281	'1'302	A-U	outward
+'1'282	'1'283	C-A	upward
+'1'282	'1'300	C-G	W/W	cis
+'1'283	'1'284	A-C	upward
+'1'283	'1'299	A-U	W/W	cis
+'1'283	'1'300	A-G	outward
+'1'284	'1'285	C-C	upward
+'1'284	'1'298	C-G	W/W	cis
+'1'285	'1'286	C-A	upward
+'1'285	'1'297	C-G	W/W	cis
+'1'285	'1'298	C-G	outward
+'1'286	'1'287	A-A	upward
+'1'286	'1'296	A-U	W/W	cis
+'1'286	'1'297	A-G	outward
+'1'287	'1'295	A-U	W/W	cis
+'1'287	'1'296	A-U	outward
+'1'295	'1'296	U-U	upward
+'1'296	'1'297	U-G	upward
+'1'297	'1'298	G-G	upward
+'1'298	'1'299	G-U	upward
+'1'299	'1'300	U-G	upward
+'1'300	'1'301	G-U	upward
+'1'301	'1'302	U-U	upward
+'1'303	'1'304	A-G	upward
+'1'304	'1'305	G-G	upward
+'1'305	'1'306	G-G	upward
+'1'306	'1'307	G-G	upward
+'1'307	'1'308	G-A	upward
+'1'308	'1'309	A-G	upward
+'1'309	'1'310	G-C	upward
+'1'309	'1'532	G-U	W/W	cis
+'1'310	'1'311	C-U	upward
+'1'310	'1'531	C-G	W/W	cis
+'1'311	'1'530	U-G	W/W	cis
+'1'311	'1'531	U-G	outward
+'1'312	'1'313	G-G	upward
+'1'312	'1'529	G-U	W/W	cis
+'1'312	'1'530	G-G	outward
+'1'313	'1'314	G-G	upward
+'1'313	'1'528	G-U	W/W	cis
+'1'313	'1'529	G-U	outward
+'1'314	'1'315	G-G	upward
+'1'314	'1'527	G-C	W/W	cis
+'1'314	'1'528	G-U	outward
+'1'315	'1'316	G-C	upward
+'1'315	'1'526	G-U	W/W	cis
+'1'315	'1'527	G-C	outward
+'1'316	'1'317	C-C	upward
+'1'316	'1'525	C-G	W/W	cis
+'1'317	'1'318	C-U	upward
+'1'317	'1'524	C-G	W/W	cis
+'1'317	'1'525	C-G	outward
+'1'318	'1'319	U-U	upward
+'1'318	'1'523	U-A	W/W	cis
+'1'318	'1'524	U-G	outward
+'1'319	'1'320	U-U	upward
+'1'319	'1'522	U-A	W/W	cis
+'1'319	'1'523	U-A	outward
+'1'320	'1'321	U-C	upward
+'1'320	'1'521	U-G	W/W	cis
+'1'320	'1'522	U-A	outward
+'1'321	'1'322	C-A	upward
+'1'321	'1'520	C-G	W/W	cis
+'1'321	'1'521	C-G	outward
+'1'322	'1'323	A-A	upward
+'1'322	'1'519	A-U	W/W	cis
+'1'322	'1'520	A-G	outward
+'1'323	'1'324	A-A	upward
+'1'323	'1'518	A-U	W/W	cis
+'1'323	'1'519	A-U	outward
+'1'324	'1'325	A-A	upward
+'1'324	'1'517	A-U	W/W	cis
+'1'324	'1'518	A-U	outward
+'1'325	'1'516	A-U	W/W	cis
+'1'325	'1'517	A-U	outward
+'1'516	'1'517	U-U	upward
+'1'517	'1'518	U-U	upward
+'1'518	'1'519	U-U	upward
+'1'519	'1'520	U-G	upward
+'1'520	'1'521	G-G	upward
+'1'521	'1'522	G-A	upward
+'1'522	'1'523	A-A	upward
+'1'523	'1'524	A-G	upward
+'1'524	'1'525	G-G	upward
+'1'525	'1'526	G-U	upward
+'1'526	'1'527	U-C	upward
+'1'527	'1'528	C-U	upward
+'1'528	'1'529	U-U	upward
+'1'530	'1'531	G-G	upward
+'1'531	'1'532	G-U	upward
+'1'538	'1'539	C-G	upward
+'1'539	'1'540	G-G	upward
+'1'540	'1'542	G-U	upward
+'1'542	'1'543	U-G	upward
+'1'543	'1'544	G-G	upward
+'1'544	'1'545	G-A	upward
+'1'545	'1'546	A-U	upward
+'1'546	'1'547	U-C	upward
+'1'547	'1'548	C-U	upward
+'1'548	'1'549	U-U	upward
+'1'549	'1'550	U-A	upward
+'1'550	'1'551	A-U	inward
+'1'563	'1'564	U-A	outward
+'2'30	'2'31	A-A	upward
+'2'31	'2'32	A-G	upward
+'2'33	'2'34	U-G	upward
+'2'33	I72	U-A	W/W	cis
+'2'34	'2'35	G-PSU	upward
+'2'34	I71	G-C	W/W	cis
+'2'34	I72	G-A	outward
+'2'35	'2'36	PSU-A	upward
+'2'35	I69	P-A	W/W	cis
+'2'36	'2'37	A-G	upward
+'2'36	I69	A-A	outward
+'2'37	'2'38	G-U	upward
+'2'37	I67	G-C	W/W	cis
+'2'38	'2'39	U-A	upward
+'2'38	I66	U-A	W/W	cis
+'2'39	'2'40	A-U	upward
+'2'39	I65	A-U	W/W	cis
+'2'39	I66	A-A	outward
+'2'40	I64	U-U	W/W	cis
+'2'41	'2'42	C-PSU	upward
+'2'41	I63	C-U	W/W	cis
+'2'41	I64	C-U	outward
+'2'42	I62	P-A	W/W	cis
+'2'43	'2'44	G-PSU	upward
+'2'43	I60	G-U	W/W	cis
+'2'43	I62	G-A	outward
+'2'44	I59	P-C	W/W	cis
+'2'45	'2'46	U-C	upward
+'2'45	I58	U-U	W/W	cis
+'2'45	I59	U-C	outward
+'2'48	'2'49	U-U	upward
+'2'49	'2'50	U-U	upward
+'2'49	'2'66	U-A	W/W	cis
+'2'50	'2'51	U-C	upward
+'2'50	'2'65	U-A	W/W	cis
+'2'50	'2'66	U-A	outward
+'2'51	'2'52	C-A	upward
+'2'51	'2'64	C-G	W/W	cis
+'2'52	'2'53	A-G	upward
+'2'52	'2'63	A-U	W/W	cis
+'2'52	'2'64	A-G	outward
+'2'53	'2'54	G-U	upward
+'2'53	'2'62	G-C	W/W	cis
+'2'53	'2'63	G-U	outward
+'2'54	'2'55	U-G	upward
+'2'54	'2'61	U-A	W/W	cis
+'2'55	'2'56	G-U	upward
+'2'55	'2'60	G-A	S/H	trans
+'2'55	'2'61	G-A	outward
+'2'56	'2'59	U-C	S/H	trans
+'2'57	'2'58	A-A	upward
+'2'58	'2'59	A-C	upward
+'2'59	'2'60	C-A	upward
+'2'60	'2'61	A-A	upward
+'2'61	'2'62	A-C	upward
+'2'62	'2'63	C-U	upward
+'2'64	'2'65	G-A	upward
+'2'65	'2'66	A-A	upward
+'2'67	'2'68	A-U	upward
+'2'67	'2'85	A-A	inward
+'2'67	'2'86	A-U	W/W	cis
+'2'68	'2'69	U-G	upward
+'2'68	'2'85	U-A	W/W	cis
+'2'69	'2'70	G-A	upward
+'2'69	'2'84	G-C	W/W	cis
+'2'69	'2'85	G-A	outward
+'2'70	'2'71	A-C	upward
+'2'70	'2'83	A-U	W/W	cis
+'2'71	'2'72	C-C	upward
+'2'71	'2'81	C-G	W/W	cis
+'2'72	'2'73	C-U	upward
+'2'72	'2'80	C-G	W/W	cis
+'2'73	'2'79	U-A	W/W	cis
+'2'73	'2'80	U-G	outward
+'2'79	'2'80	A-G	upward
+'2'80	'2'81	G-G	upward
+'2'81	'2'83	G-U	upward
+'2'83	'2'84	U-C	upward
+'2'84	'2'85	C-A	upward
+'2'85	'2'86	A-U	upward
+'2'108	'2'109	A-C	upward
+'2'120	'2'121	G-C	upward
+'2'121	'2'122	C-A	upward
+'2'139	'2'140	G-G	upward
+'2'139	'2'1169	G-C	W/W	cis
+'2'140	'2'141	G-A	upward
+'2'140	'2'1168	G-U	W/W	cis
+'2'140	'2'1169	G-C	outward
+'2'141	'2'142	A-C	upward
+'2'141	'2'1167	A-U	W/W	cis
+'2'141	'2'1168	A-U	outward
+'2'142	'2'143	C-G	upward
+'2'142	'2'1166	C-G	W/W	cis
+'2'143	'2'144	G-G	upward
+'2'143	'2'1165	G-C	W/W	cis
+'2'143	'2'1166	G-G	outward
+'2'144	'2'145	G-G	upward
+'2'144	'2'1164	G-C	W/W	cis
+'2'144	'2'1165	G-C	outward
+'2'145	'2'146	G-A	upward
+'2'145	'2'1163	G-C	W/W	cis
+'2'145	'2'1164	G-C	outward
+'2'146	'2'147	A-A	upward
+'2'146	'2'1162	A-U	W/W	cis
+'2'146	'2'1163	A-C	outward
+'2'147	'2'148	A-G	upward
+'2'147	'2'1161	A-U	W/W	cis
+'2'147	'2'1162	A-U	outward
+'2'148	'2'149	G-A	upward
+'2'148	'2'1160	G-C	W/W	cis
+'2'148	'2'1161	G-U	outward
+'2'149	'2'150	A-G	upward
+'2'149	'2'1159	A-U	W/W	cis
+'2'149	'2'1160	A-C	outward
+'2'150	'2'1159	G-U	outward
+'2'1089	'2'1090	G-A	upward
+'2'1089	'2'1153	G-C	W/W	cis
+'2'1089	'2'1154	G-U	outward
+'2'1090	'2'1091	A-G	upward
+'2'1090	'2'1152	A-U	W/W	cis
+'2'1091	'2'1092	G-A	upward
+'2'1091	'2'1151	G-U	W/W	cis
+'2'1092	'2'1093	A-C	upward
+'2'1092	'2'1150	A-U	W/W	cis
+'2'1093	'2'1094	C-G	upward
+'2'1093	'2'1149	C-G	W/W	cis
+'2'1094	'2'1095	G-U	upward
+'2'1094	'2'1148	G-U	W/W	cis
+'2'1094	'2'1149	G-G	outward
+'2'1095	'2'1096	U-C	upward
+'2'1095	'2'1147	U-A	W/W	cis
+'2'1096	'2'1146	C-G	W/W	cis
+'2'1096	'2'1147	C-A	outward
+'2'1097	'2'1098	G-C	upward
+'2'1097	'2'1143	G-C	W/W	cis
+'2'1097	'2'1146	G-G	outward
+'2'1098	'2'1142	C-G	W/W	cis
+'2'1099	'2'1100	G-A	upward
+'2'1099	'2'1141	G-C	W/W	cis
+'2'1099	'2'1142	G-G	outward
+'2'1100	'2'1102	A-C	upward
+'2'1100	'2'1140	A-U	W/W	cis
+'2'1100	'2'1141	A-C	outward
+'2'1102	'2'1103	C-C	upward
+'2'1102	'2'1139	C-G	W/W	cis
+'2'1103	'2'1104	C-U	upward
+'2'1103	'2'1138	C-G	W/W	cis
+'2'1103	'2'1139	C-G	outward
+'2'1105	'2'1106	C-G	outward
+'2'1115	'2'1116	G-A	upward
+'2'1115	'2'1130	G-U	W/W	cis
+'2'1116	'2'1117	A-G	upward
+'2'1116	'2'1129	A-U	W/W	cis
+'2'1116	'2'1130	A-U	outward
+'2'1117	'2'1118	G-U	upward
+'2'1117	'2'1128	G-C	W/W	cis
+'2'1117	'2'1129	G-U	outward
+'2'1118	'2'1119	U-C	upward
+'2'1118	'2'1127	U-A	W/W	cis
+'2'1119	'2'1126	C-G	W/W	cis
+'2'1119	'2'1127	C-A	outward
+'2'1120	'2'1121	G-U	upward
+'2'1120	'2'1125	G-U	W/W	cis
+'2'1120	'2'1126	G-G	outward
+'2'1121	'2'1122	U-U	upward
+'2'1126	'2'1127	G-A	upward
+'2'1127	'2'1128	A-C	upward
+'2'1128	'2'1129	C-U	upward
+'2'1129	'2'1130	U-U	upward
+'2'1138	'2'1139	G-G	upward
+'2'1139	'2'1140	G-U	upward
+'2'1140	'2'1141	U-C	upward
+'2'1141	'2'1142	C-G	upward
+'2'1142	'2'1143	G-C	upward
+'2'1146	'2'1147	G-A	upward
+'2'1147	'2'1148	A-U	upward
+'2'1149	'2'1150	G-U	upward
+'2'1150	'2'1151	U-U	upward
+'2'1151	'2'1152	U-U	upward
+'2'1152	'2'1153	U-C	upward
+'2'1153	'2'1154	C-U	upward
+'2'1159	'2'1160	U-C	upward
+'2'1160	'2'1161	C-U	upward
+'2'1161	'2'1162	U-U	upward
+'2'1162	'2'1163	U-C	upward
+'2'1163	'2'1164	C-C	upward
+'2'1164	'2'1165	C-C	upward
+'2'1166	'2'1167	G-U	upward
+'2'1167	'2'1168	U-U	upward
+'2'1168	'2'1169	U-C	upward
+I-1	I0	A-G	upward
+I0	I1	G-G	upward
+I1	I2	G-U	upward
+I2	I3	U-A	upward
+I3	I4	A-U	upward
+I4	I5	U-G	upward
+I5	I6	G-U	upward
+I6	I7	U-C	upward
+I7	I8	C-U	upward
+I8	I9	U-A	upward
+I9	I10	A-A	upward
+I52	I53	U-U	upward
+I58	I59	U-C	upward
+I59	I60	C-U	upward
+I60	I61	U-U	upward
+I61	I62	U-A	upward
+I62	I63	A-U	upward
+I63	I64	U-U	upward
+I64	I65	U-U	upward
+I65	I66	U-A	upward
+I66	I67	A-C	upward
+I69	I71	A-C	upward
+I72	I73	A-A	upward
+I74	I75	A-A	upward
+I75	I76	A-U	upward
+I76	I77	U-C	upward
+I77	I79	C-A	upward

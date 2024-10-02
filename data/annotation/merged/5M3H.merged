@@ -1,0 +1,32 @@
+R1	R2	U-A	upward
+R2	R3	A-U	upward
+R3	R4	U-A	upward
+R4	R5	A-C	upward
+R5	R6	C-C	upward
+R5	V15	C-G	W/W	cis
+R6	R7	C-U	upward
+R6	V14	C-G	W/W	cis
+R6	V15	C-G	outward
+R7	R8	U-C	upward
+R7	V13	U-A	W/W	cis
+R7	V14	U-G	outward
+R8	R9	C-U	upward
+R8	V12	C-G	W/W	cis
+R9	R10	U-G	inward
+R9	V11	U-A	W/W	cis
+R9	V12	U-G	outward
+V1	V2	A-G	upward
+V1	V10	A-A	H/S	trans
+V2	V3	G-U	upward
+V2	V9	G-C	W/W	cis
+V3	V4	U-A	upward
+V3	V8	U-A	W/W	cis
+V4	V5	A-G	inward
+V4	V7	A-A	S/W	cis
+V7	V8	A-A	upward
+V8	V9	A-C	upward
+V9	V10	C-A	upward
+V11	V12	A-G	upward
+V12	V13	G-A	upward
+V13	V14	A-G	upward
+V14	V15	G-G	upward

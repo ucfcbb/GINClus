@@ -1,0 +1,180 @@
+****************************************************************************
+                DSSR: an Integrated Software Tool for
+               Dissecting the Spatial Structure of RNA
+               v1.7.8-2018sep01, by xiangjun@x3dna.org
+
+   This program is being actively maintained and developed. As always,
+   I greatly appreciate your feedback! Please report all DSSR-related
+   issues on the 3DNA Forum (forum.x3dna.org). I strive to respond
+   *promptly* to *any questions* posted there.
+
+****************************************************************************
+Note: By default, each nucleotide is identified by chainId.name#. So a
+      common case would be B.A1689, meaning adenosine #1689 on chain B.
+      One-letter base names for modified nucleotides are put in lower
+      case (e.g., 'c' for 5MC). For further information about the output
+      notation, please refer to the DSSR User Manual.
+    Questions and suggestions are *always* welcome on the 3DNA Forum.
+
+Command: x3dna-dssr -i=/media/nabila/DATA/GINClus_test/data/pdbx/4C8Z.cif --format=mmcif --non-pair -o=/media/nabila/DATA/GINClus_test/data/annotation/dssr/4C8Z.dssr
+Date and time: Tue Oct  1 21:40:24 2024
+File name: 4C8Z.cif
+    no. of DNA/RNA chains: 1 [C=14]
+    no. of nucleotides:    14
+    no. of atoms:          7961
+    no. of waters:         128
+    no. of metals:         1 [K=1]
+
+****************************************************************************
+List of 1 type of 1 modified nucleotide
+      nt    count  list
+   1 23G-g    1    C.23G28
+
+****************************************************************************
+List of 5 base pairs
+     nt1            nt2            bp  name        Saenger   LW   DSSR
+   1 C.C17          C.23G28        C-g WC          19-XIX    cWW  cW-W
+   2 C.C18          C.G27          C-G WC          19-XIX    cWW  cW-W
+   3 C.C19          C.G26          C-G WC          19-XIX    cWW  cW-W
+   4 C.C20          C.G25          C-G WC          19-XIX    cWW  cW-W
+   5 C.G21          C.A24          G-A Sheared     11-XI     tSH  tm-M
+
+****************************************************************************
+List of 1 helix
+  Note: a helix is defined by base-stacking interactions, regardless of bp
+        type and backbone connectivity, and may contain more than one stem.
+      helix#number[stems-contained] bps=number-of-base-pairs in the helix
+      bp-type: '|' for a canonical WC/wobble pair, '.' otherwise
+      helix-form: classification of a dinucleotide step comprising the bp
+        above the given designation and the bp that follows it. Types
+        include 'A', 'B' or 'Z' for the common A-, B- and Z-form helices,
+        '.' for an unclassified step, and 'x' for a step without a
+        continuous backbone.
+      --------------------------------------------------------------------
+  helix#1[1] bps=5
+      strand-1 5'-CCCCG-3'
+       bp-type    ||||.
+      strand-2 3'-gGGGA-5'
+      helix-form  AAA.
+   1 C.C17          C.23G28        C-g WC           19-XIX    cWW  cW-W
+   2 C.C18          C.G27          C-G WC           19-XIX    cWW  cW-W
+   3 C.C19          C.G26          C-G WC           19-XIX    cWW  cW-W
+   4 C.C20          C.G25          C-G WC           19-XIX    cWW  cW-W
+   5 C.G21          C.A24          G-A Sheared      11-XI     tSH  tm-M
+
+****************************************************************************
+List of 1 stem
+  Note: a stem is defined as a helix consisting of only canonical WC/wobble
+        pairs, with a continuous backbone.
+      stem#number[#helix-number containing this stem]
+      Other terms are defined as in the above Helix section.
+      --------------------------------------------------------------------
+  stem#1[#1] bps=4
+      strand-1 5'-CCCC-3'
+       bp-type    ||||
+      strand-2 3'-gGGG-5'
+      helix-form  AAA
+   1 C.C17          C.23G28        C-g WC           19-XIX    cWW  cW-W
+   2 C.C18          C.G27          C-G WC           19-XIX    cWW  cW-W
+   3 C.C19          C.G26          C-G WC           19-XIX    cWW  cW-W
+   4 C.C20          C.G25          C-G WC           19-XIX    cWW  cW-W
+
+****************************************************************************
+List of 12 non-pairing interactions
+   1 C.A15      C.G16      stacking: 1.1(0.0)--pm(>>,forward) interBase-angle=42 connected min_baseDist=3.18
+   2 C.C17      C.C18      stacking: 0.5(0.0)--pm(>>,forward) interBase-angle=13 connected min_baseDist=3.55
+   3 C.C18      C.C19      stacking: 1.0(0.3)--pm(>>,forward) interBase-angle=7 connected min_baseDist=3.24
+   4 C.C18      C.23G28    stacking: 0.4(0.0)--mm(<>,outward) interBase-angle=7 min_baseDist=3.26
+   5 C.C19      C.G27      stacking: 0.6(0.0)--mm(<>,outward) interBase-angle=6 min_baseDist=3.32
+   6 C.C20      C.G21      stacking: 5.2(2.8)--pm(>>,forward) interBase-angle=12 connected min_baseDist=3.08
+   7 C.C20      C.G26      stacking: 0.9(0.0)--mm(<>,outward) interBase-angle=5 min_baseDist=3.21
+   8 C.G21      C.A23      stacking: 6.1(3.5)--pm(>>,forward) interBase-angle=12 min_baseDist=3.00
+   9 C.A24      C.G25      stacking: 0.3(0.0)--pm(>>,forward) interBase-angle=13 connected min_baseDist=2.95
+  10 C.G25      C.G26      stacking: 3.8(2.1)--pm(>>,forward) interBase-angle=3 connected min_baseDist=3.25
+  11 C.G26      C.G27      stacking: 2.6(1.1)--pm(>>,forward) interBase-angle=4 connected min_baseDist=3.35
+  12 C.G27      C.23G28    stacking: 3.8(2.5)--pm(>>,forward) interBase-angle=17 connected min_baseDist=2.86
+
+****************************************************************************
+List of 4 stacks
+  Note: a stack is an ordered list of nucleotides assembled together via
+        base-stacking interactions, regardless of backbone connectivity.
+        Stacking interactions within a stem are *not* included.
+   1 nts=2 Eg A.GLU186,C.23G28
+   2 nts=2 AG C.A15,C.G16
+   3 nts=2 AG C.A24,C.G25
+   4 nts=3 CGA C.C20,C.G21,C.A23
+
+****************************************************************************
+List of 3 atom-base capping interactions
+    dv: vertical distance of the atom above the nucleotide base
+    -----------------------------------------------------------
+     type       atom                 nt             dv
+   1 sugar      O4'@C.A15            C.G16          3.04
+   2 sugar      O4'@C.A23            C.A24          3.32
+   3 sugar      O4'@C.G25            C.A24          3.37
+
+****************************************************************************
+Note: for the various types of loops listed below, numbers within the first
+      set of brackets are the number of loop nts, and numbers in the second
+      set of brackets are the identities of the stems (positive number) or
+      isolated WC/wobble pairs (negative numbers) to which they are linked.
+
+****************************************************************************
+List of 1 hairpin loop
+   1 hairpin loop: nts=6; [4]; linked by [#1]
+     summary: [1] 4 [C.20 C.25] 4
+     nts=6 CGUAAG C.C20,C.G21,C.U22,C.A23,C.A24,C.G25
+       nts=4 GUAA C.G21,C.U22,C.A23,C.A24
+
+****************************************************************************
+List of 1 non-loop single-stranded segment
+   1 nts=2 AG C.A15,C.G16
+
+****************************************************************************
+Secondary structures in dot-bracket notation (dbn) as a whole and per chain
+>4C8Z nts=14 [whole]
+AGCCCCGUAAGGGg
+..((((....))))
+>4C8Z-1-C #1 nts=14 0.85(1.72) [chain] RNA
+AGCCCCGUAAGGGg
+..((((....))))
+
+****************************************************************************
+Summary of structural features of 14 nucleotides
+  Note: the first five columns are: (1) serial number, (2) one-letter
+    shorthand name, (3) dbn, (4) id string, (5) rmsd (~zero) of base
+    ring atoms fitted against those in a standard base reference
+    frame. The sixth (last) column contains a comma-separated list of
+    features whose meanings are mostly self-explanatory, except for:
+      turn: angle C1'(i-1)--C1'(i)--C1'(i+1) < 90 degrees
+      break: no backbone linkage between O3'(i-1) and P(i)
+   1  A . C.A15      0.014  syn,~C2'-endo,non-pair-contact,ss-non-loop,cap-donor,phosphate
+   2  G . C.G16      0.015  anti,~C3'-endo,BI,non-pair-contact,ss-non-loop,cap-acceptor,phosphate
+   3  C ( C.C17      0.008  anti,~C3'-endo,BI,canonical,non-pair-contact,helix-end,stem-end
+   4  C ( C.C18      0.009  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem
+   5  C ( C.C19      0.014  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem
+   6  C ( C.C20      0.016  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem-end,hairpin-loop
+   7  G . C.G21      0.021  anti,~C3'-endo,non-canonical,non-pair-contact,helix-end,hairpin-loop
+   8  U . C.U22      ---    turn,~C3'-endo,non-stack,hairpin-loop
+   9  A . C.A23      0.014  turn,anti,~C2'-endo,non-pair-contact,hairpin-loop,cap-donor,phosphate
+  10  A . C.A24      0.017  turn,anti,~C3'-endo,BI,non-canonical,non-pair-contact,helix-end,hairpin-loop,cap-acceptor
+  11  G ) C.G25      0.030  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem-end,hairpin-loop,cap-donor,phosphate
+  12  G ) C.G26      0.039  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem,phosphate
+  13  G ) C.G27      0.031  anti,~C3'-endo,BI,canonical,non-pair-contact,helix,stem,phosphate
+  14  g ) C.23G28    0.031  modified,anti,~C2'-endo,canonical,non-pair-contact,helix-end,stem-end,phosphate
+
+****************************************************************************
+List of 10 additional files
+   1 dssr-stems.pdb -- an ensemble of stems
+   2 dssr-helices.pdb -- an ensemble of helices (coaxial stacking)
+   3 dssr-pairs.pdb -- an ensemble of base pairs
+   4 dssr-hairpins.pdb -- an ensemble of hairpin loops
+   5 dssr-2ndstrs.bpseq -- secondary structure in bpseq format
+   6 dssr-2ndstrs.ct -- secondary structure in connectivity table format
+   7 dssr-2ndstrs.dbn -- secondary structure in dot-bracket notation
+   8 dssr-torsions.txt -- backbone torsion angles and suite names
+   9 dssr-stacks.pdb -- an ensemble of stacks
+  10 dssr-atom2bases.pdb -- an ensemble of atom-base stacking interactions
+
+****************************************************************************
+Time used: 00:00:00:00

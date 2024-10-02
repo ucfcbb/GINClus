@@ -1,0 +1,275 @@
+'1'1	'1'2	GTP-G	upward
+'1'1	X10	G-C	W/W	cis
+'1'2	'1'3	G-A	upward
+'1'2	X9	G-C	W/W	cis
+'1'2	X10	G-C	outward
+'1'3	'1'4	A-C	upward
+'1'3	X8	A-U	W/W	cis
+'1'3	X9	A-C	outward
+'1'4	'1'5	C-U	upward
+'1'4	X7	C-G	W/W	cis
+'1'5	'1'6	U-U	upward
+'1'5	X6	U-A	W/W	cis
+'1'5	X7	U-G	outward
+'1'6	'1'7	U-A	upward
+'1'6	X5	U-A	W/W	cis
+'1'7	'1'8	A-C	upward
+'1'7	X4	A-U	W/W	cis
+'1'7	X5	A-A	outward
+'1'8	'1'9	C-C	upward
+'1'8	X3	C-G	W/W	cis
+'1'9	'1'10	C-U	upward
+'1'9	X2	C-G	W/W	cis
+'1'9	X3	C-G	outward
+'1'10	'1'11	U-G	upward
+'1'10	X1	U-A	W/W	cis
+'1'10	X2	U-G	outward
+'1'11	X1	G-A	outward
+'1'12	'1'13	G-C	upward
+'1'12	'1'122	G-C	W/W	cis
+'1'12	'1'123	G-A	outward
+'1'13	'1'14	C-A	upward
+'1'13	'1'31	C-G	W/W	cis
+'1'14	'1'15	A-G	upward
+'1'14	'1'30	A-U	W/W	cis
+'1'14	'1'31	A-G	outward
+'1'15	'1'16	G-U	upward
+'1'15	'1'29	G-C	W/W	cis
+'1'15	'1'30	G-U	outward
+'1'16	'1'17	U-G	upward
+'1'16	'1'28	U-A	W/W	cis
+'1'17	'1'18	G-A	inward
+'1'17	'1'27	G-C	W/W	cis
+'1'17	'1'28	G-A	outward
+'1'18	'1'26	A-A	W/W	trans
+'1'20	'1'21	G-U	upward
+'1'21	'1'22	U-G	upward
+'1'22	'1'23	G-C	upward
+'1'23	'1'24	C-A	upward
+'1'24	'1'25	A-C	upward
+'1'25	'1'26	C-A	upward
+'1'26	'1'27	A-C	upward
+'1'27	'1'28	C-A	upward
+'1'28	'1'29	A-C	upward
+'1'29	'1'30	C-U	upward
+'1'30	'1'31	U-G	upward
+'1'31	'1'122	G-C	upward
+'1'122	'1'123	C-A	upward
+'1'123	'1'124	A-U	inward
+'1'132	'1'134	G-U	downward
+'1'135	'1'137	A-U	upward
+'2'1	'2'2	GTP-G	upward
+'2'1	x10	G-C	W/W	cis
+'2'2	'2'3	G-A	upward
+'2'2	x9	G-C	W/W	cis
+'2'2	x10	G-C	outward
+'2'3	'2'4	A-C	upward
+'2'3	x8	A-U	W/W	cis
+'2'3	x9	A-C	outward
+'2'4	'2'5	C-U	upward
+'2'4	x7	C-G	W/W	cis
+'2'5	'2'6	U-U	upward
+'2'5	x6	U-A	W/W	cis
+'2'5	x7	U-G	outward
+'2'6	'2'7	U-A	upward
+'2'6	x5	U-A	W/W	cis
+'2'7	'2'8	A-C	upward
+'2'7	x4	A-U	W/W	cis
+'2'7	x5	A-A	outward
+'2'8	'2'9	C-C	upward
+'2'8	x3	C-G	W/W	cis
+'2'9	'2'10	C-U	upward
+'2'9	x2	C-G	W/W	cis
+'2'9	x3	C-G	outward
+'2'10	'2'11	U-G	upward
+'2'10	x1	U-A	W/W	cis
+'2'10	x2	U-G	outward
+'2'11	x1	G-A	outward
+'2'12	'2'13	G-C	upward
+'2'12	'2'122	G-C	W/W	cis
+'2'12	'2'123	G-A	outward
+'2'13	'2'14	C-A	upward
+'2'13	'2'31	C-G	W/W	cis
+'2'14	'2'15	A-G	upward
+'2'14	'2'30	A-U	W/W	cis
+'2'14	'2'31	A-G	outward
+'2'15	'2'16	G-U	upward
+'2'15	'2'29	G-C	W/W	cis
+'2'15	'2'30	G-U	outward
+'2'16	'2'17	U-G	upward
+'2'16	'2'28	U-A	W/W	cis
+'2'17	'2'18	G-A	inward
+'2'17	'2'27	G-C	W/W	cis
+'2'17	'2'28	G-A	outward
+'2'18	'2'26	A-A	W/W	trans
+'2'20	'2'21	G-U	upward
+'2'21	'2'22	U-G	upward
+'2'22	'2'23	G-C	upward
+'2'23	'2'24	C-A	upward
+'2'24	'2'25	A-C	upward
+'2'25	'2'26	C-A	upward
+'2'26	'2'27	A-C	upward
+'2'27	'2'28	C-A	upward
+'2'28	'2'29	A-C	upward
+'2'29	'2'30	C-U	upward
+'2'30	'2'31	U-G	upward
+'2'31	'2'122	G-C	upward
+'2'122	'2'123	C-A	upward
+'2'123	'2'124	A-U	inward
+'2'132	'2'134	G-U	downward
+'2'135	'2'137	A-U	upward
+'3'1	'3'2	GTP-G	upward
+'3'1	Y10	G-C	W/W	cis
+'3'2	'3'3	G-A	upward
+'3'2	Y9	G-C	W/W	cis
+'3'2	Y10	G-C	outward
+'3'3	'3'4	A-C	upward
+'3'3	Y8	A-U	W/W	cis
+'3'3	Y9	A-C	outward
+'3'4	'3'5	C-U	upward
+'3'4	Y7	C-G	W/W	cis
+'3'5	'3'6	U-U	upward
+'3'5	Y6	U-A	W/W	cis
+'3'5	Y7	U-G	outward
+'3'6	'3'7	U-A	upward
+'3'6	Y5	U-A	W/W	cis
+'3'7	'3'8	A-C	upward
+'3'7	Y4	A-U	W/W	cis
+'3'7	Y5	A-A	outward
+'3'8	'3'9	C-C	upward
+'3'8	Y3	C-G	W/W	cis
+'3'9	'3'10	C-U	upward
+'3'9	Y2	C-G	W/W	cis
+'3'9	Y3	C-G	outward
+'3'10	'3'11	U-G	upward
+'3'10	Y1	U-A	W/W	cis
+'3'10	Y2	U-G	outward
+'3'11	Y1	G-A	outward
+'3'12	'3'13	G-C	upward
+'3'12	'3'122	G-C	W/W	cis
+'3'12	'3'123	G-A	outward
+'3'13	'3'14	C-A	upward
+'3'13	'3'31	C-G	W/W	cis
+'3'14	'3'15	A-G	upward
+'3'14	'3'30	A-U	W/W	cis
+'3'14	'3'31	A-G	outward
+'3'15	'3'16	G-U	upward
+'3'15	'3'29	G-C	W/W	cis
+'3'15	'3'30	G-U	outward
+'3'16	'3'17	U-G	upward
+'3'16	'3'28	U-A	W/W	cis
+'3'17	'3'18	G-A	inward
+'3'17	'3'27	G-C	W/W	cis
+'3'17	'3'28	G-A	outward
+'3'18	'3'26	A-A	W/W	trans
+'3'20	'3'21	G-U	upward
+'3'21	'3'22	U-G	upward
+'3'22	'3'23	G-C	upward
+'3'23	'3'24	C-A	upward
+'3'24	'3'25	A-C	upward
+'3'25	'3'26	C-A	upward
+'3'26	'3'27	A-C	upward
+'3'27	'3'28	C-A	upward
+'3'28	'3'29	A-C	upward
+'3'29	'3'30	C-U	upward
+'3'30	'3'31	U-G	upward
+'3'31	'3'122	G-C	upward
+'3'122	'3'123	C-A	upward
+'3'123	'3'124	A-U	inward
+'3'132	'3'134	G-U	downward
+'4'1	'4'2	GTP-G	upward
+'4'1	y10	G-C	W/W	cis
+'4'2	'4'3	G-A	upward
+'4'2	y9	G-C	W/W	cis
+'4'2	y10	G-C	outward
+'4'3	'4'4	A-C	upward
+'4'3	y8	A-U	W/W	cis
+'4'3	y9	A-C	outward
+'4'4	'4'5	C-U	upward
+'4'4	y7	C-G	W/W	cis
+'4'5	'4'6	U-U	upward
+'4'5	y6	U-A	W/W	cis
+'4'5	y7	U-G	outward
+'4'6	'4'7	U-A	upward
+'4'6	y5	U-A	W/W	cis
+'4'7	'4'8	A-C	upward
+'4'7	y4	A-U	W/W	cis
+'4'7	y5	A-A	outward
+'4'8	'4'9	C-C	upward
+'4'8	y3	C-G	W/W	cis
+'4'9	'4'10	C-U	upward
+'4'9	y2	C-G	W/W	cis
+'4'9	y3	C-G	outward
+'4'10	'4'11	U-G	upward
+'4'10	y1	U-A	W/W	cis
+'4'10	y2	U-G	outward
+'4'11	y1	G-A	outward
+'4'12	'4'13	G-C	upward
+'4'12	'4'122	G-C	W/W	cis
+'4'12	'4'123	G-A	outward
+'4'13	'4'14	C-A	upward
+'4'13	'4'31	C-G	W/W	cis
+'4'14	'4'15	A-G	upward
+'4'14	'4'30	A-U	W/W	cis
+'4'14	'4'31	A-G	outward
+'4'15	'4'16	G-U	upward
+'4'15	'4'29	G-C	W/W	cis
+'4'15	'4'30	G-U	outward
+'4'16	'4'17	U-G	upward
+'4'16	'4'28	U-A	W/W	cis
+'4'17	'4'18	G-A	inward
+'4'17	'4'27	G-C	W/W	cis
+'4'17	'4'28	G-A	outward
+'4'18	'4'26	A-A	W/W	trans
+'4'20	'4'21	G-U	upward
+'4'21	'4'22	U-G	upward
+'4'22	'4'23	G-C	upward
+'4'23	'4'24	C-A	upward
+'4'24	'4'25	A-C	upward
+'4'25	'4'26	C-A	upward
+'4'26	'4'27	A-C	upward
+'4'27	'4'28	C-A	upward
+'4'28	'4'29	A-C	upward
+'4'29	'4'30	C-U	upward
+'4'30	'4'31	U-G	upward
+'4'31	'4'122	G-C	upward
+'4'122	'4'123	C-A	upward
+'4'123	'4'124	A-U	inward
+'4'132	'4'134	G-U	downward
+'4'138	'4'139	G-G	upward
+X1	X2	A-G	upward
+X2	X3	G-G	upward
+X3	X4	G-U	upward
+X4	X5	U-A	upward
+X5	X6	A-A	upward
+X6	X7	A-G	upward
+X7	X8	G-U	upward
+X8	X9	U-C	upward
+X9	X10	C-C	upward
+Y1	Y2	A-G	upward
+Y2	Y3	G-G	upward
+Y3	Y4	G-U	upward
+Y4	Y5	U-A	upward
+Y5	Y6	A-A	upward
+Y6	Y7	A-G	upward
+Y7	Y8	G-U	upward
+Y8	Y9	U-C	upward
+Y9	Y10	C-C	upward
+x1	x2	A-G	upward
+x2	x3	G-G	upward
+x3	x4	G-U	upward
+x4	x5	U-A	upward
+x5	x6	A-A	upward
+x6	x7	A-G	upward
+x7	x8	G-U	upward
+x8	x9	U-C	upward
+x9	x10	C-C	upward
+y1	y2	A-G	upward
+y2	y3	G-G	upward
+y3	y4	G-U	upward
+y4	y5	U-A	upward
+y5	y6	A-A	upward
+y6	y7	A-G	upward
+y7	y8	G-U	upward
+y8	y9	U-C	upward
+y9	y10	C-C	upward

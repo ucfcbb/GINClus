@@ -1,0 +1,211 @@
+C901	C902	U-C	upward
+C901	C972	U-A	W/W	cis
+C901	C973	U-G	outward
+C902	C903	C-C	upward
+C902	C971	C-G	W/W	cis
+C902	C972	C-A	outward
+C903	C904	C-G	upward
+C903	C970	C-G	W/W	cis
+C903	C971	C-G	outward
+C904	C905	G-U	upward
+C904	C969	G-C	W/W	cis
+C904	C970	G-G	outward
+C905	C906	U-G	upward
+C905	C968	U-G	W/W	cis
+C906	C907	G-A	upward
+C906	C967	G-C	W/W	cis
+C906	C968	G-G	outward
+C907	C949	A-5MC	upward
+C907	C966	A-U	W/W	cis
+C908	C913	U-PSU	inward
+C908	C914	U-A	W/H	trans
+C908	C921	U-A	S/S	trans
+C908	C946	U-A	S/S	cis
+C909	C923	A-A	H/H	trans
+C909	C945	A-G	inward
+C909	C946	A-A	outward
+C910	C911	G-U	upward
+C910	C925	G-U	W/W	cis
+C910	C926	G-G	outward
+C910	C945	G-G	H/S	cis
+C911	C912	U-U	upward
+C911	C924	U-A	W/W	cis
+C912	C913	U-PSU	upward
+C912	C923	U-A	W/W	cis
+C913	C922	P-G	W/W	cis
+C914	C915	A-A	upward
+C914	C921	A-A	W/S	cis
+C914	C922	A-G	outward
+C915	C916	A-H2U	upward
+C915	C948	A-U	W/W	trans
+C916	C959	U-U	W/W	trans
+C917	C955	G-P	W/S	trans
+C917	C957	G-A	inward
+C917	C958	G-A	outward
+C918	C956	G-C	W/W	cis
+C918	C957	G-A	outward
+C921	C946	A-A	inward
+C921	C948	A-U	outward
+C922	C923	G-A	upward
+C922	C946	G-A	H/W	trans
+C923	C924	A-A	upward
+C924	C925	A-U	upward
+C925	C926	U-G	upward
+C925	C945	U-G	W/W	cis
+C926	C927	G-G	upward
+C926	C944	G-A	W/W	cis
+C926	C945	G-G	outward
+C927	C928	G-G	upward
+C927	C943	G-C	W/W	cis
+C927	C944	G-A	outward
+C928	C929	G-C	upward
+C928	C942	G-C	W/W	cis
+C928	C943	G-C	outward
+C929	C941	C-G	W/W	cis
+C930	C931	G-C	upward
+C930	C940	G-U	W/W	cis
+C930	C941	G-G	outward
+C931	C932	C-PSU	upward
+C931	C939	C-G	W/W	cis
+C932	C938	P-C	W/W	cis
+C935	C936	U-C	upward
+C938	C939	C-G	upward
+C939	C940	G-U	upward
+C941	C942	G-C	upward
+C942	C943	C-C	upward
+C943	C944	C-A	upward
+C944	C945	A-G	upward
+C948	C959	U-U	upward
+C949	C965	C-G	W/W	cis
+C950	C951	G-G	upward
+C950	C964	G-C	W/W	cis
+C950	C965	G-G	outward
+C951	C952	G-G	upward
+C951	C963	G-C	W/W	cis
+C951	C964	G-C	outward
+C952	C953	G-G	upward
+C952	C962	G-C	W/W	cis
+C952	C963	G-C	outward
+C953	C954	G-5MU	upward
+C953	C961	G-C	W/W	cis
+C953	C962	G-C	outward
+C954	C955	5MU-PSU	upward
+C954	C958	T-A	W/H	trans
+C956	C957	C-A	upward
+C958	C961	A-C	upward
+C959	C960	U-U	upward
+C961	C962	C-C	upward
+C962	C963	C-C	upward
+C963	C964	C-C	upward
+C964	C965	C-G	upward
+C965	C966	G-U	upward
+C966	C967	U-C	upward
+C967	C968	C-G	upward
+C968	C969	G-C	upward
+C969	C970	C-G	upward
+C970	C971	G-G	upward
+C971	C972	G-A	upward
+C972	C973	A-G	upward
+C973	C974	G-C	upward
+C974	C975	C-C	upward
+D1902	D1903	C-C	upward
+D1902	D1971	C-G	W/W	cis
+D1903	D1904	C-G	upward
+D1903	D1970	C-G	W/W	cis
+D1903	D1971	C-G	outward
+D1904	D1905	G-U	upward
+D1904	D1969	G-C	W/W	cis
+D1904	D1970	G-G	outward
+D1905	D1906	U-G	upward
+D1905	D1968	U-G	W/W	cis
+D1906	D1907	G-A	upward
+D1906	D1967	G-C	W/W	cis
+D1906	D1968	G-G	outward
+D1907	D1949	A-5MC	upward
+D1907	D1966	A-U	W/W	cis
+D1908	D1913	U-PSU	inward
+D1908	D1914	U-A	W/H	trans
+D1908	D1921	U-A	S/S	trans
+D1909	D1923	A-A	H/H	trans
+D1909	D1945	A-G	inward
+D1909	D1946	A-A	outward
+D1910	D1911	G-U	upward
+D1910	D1925	G-U	W/W	cis
+D1910	D1926	G-G	outward
+D1910	D1945	G-G	H/S	cis
+D1911	D1912	U-U	upward
+D1911	D1924	U-A	W/W	cis
+D1912	D1913	U-PSU	upward
+D1912	D1923	U-A	W/W	cis
+D1913	D1922	P-G	W/W	cis
+D1914	D1915	A-A	upward
+D1914	D1921	A-A	W/S	cis
+D1914	D1922	A-G	outward
+D1915	D1916	A-H2U	upward
+D1915	D1948	A-U	W/W	trans
+D1916	D1959	U-U	W/W	trans
+D1917	D1955	G-P	W/S	trans
+D1917	D1957	G-A	inward
+D1917	D1958	G-A	outward
+D1918	D1956	G-C	W/W	cis
+D1918	D1957	G-A	outward
+D1921	D1946	A-A	inward
+D1921	D1948	A-U	outward
+D1922	D1923	G-A	upward
+D1922	D1946	G-A	H/W	trans
+D1923	D1924	A-A	upward
+D1924	D1925	A-U	upward
+D1925	D1926	U-G	upward
+D1925	D1945	U-G	W/W	cis
+D1926	D1927	G-G	upward
+D1926	D1944	G-A	W/W	cis
+D1926	D1945	G-G	outward
+D1927	D1928	G-G	upward
+D1927	D1943	G-C	W/W	cis
+D1927	D1944	G-A	outward
+D1928	D1929	G-C	upward
+D1928	D1942	G-C	W/W	cis
+D1928	D1943	G-C	outward
+D1929	D1941	C-G	W/W	cis
+D1930	D1931	G-C	upward
+D1930	D1940	G-U	W/W	cis
+D1930	D1941	G-G	outward
+D1931	D1932	C-PSU	upward
+D1931	D1939	C-G	W/W	cis
+D1932	D1938	P-C	W/W	cis
+D1935	D1936	U-C	upward
+D1938	D1939	C-G	upward
+D1939	D1940	G-U	upward
+D1941	D1942	G-C	upward
+D1942	D1943	C-C	upward
+D1943	D1944	C-A	upward
+D1944	D1945	A-G	upward
+D1948	D1959	U-U	upward
+D1949	D1965	C-G	W/W	cis
+D1950	D1951	G-G	upward
+D1950	D1964	G-C	W/W	cis
+D1950	D1965	G-G	outward
+D1951	D1952	G-G	upward
+D1951	D1963	G-C	W/W	cis
+D1951	D1964	G-C	outward
+D1952	D1953	G-G	upward
+D1952	D1962	G-C	W/W	cis
+D1952	D1963	G-C	outward
+D1953	D1954	G-5MU	upward
+D1953	D1961	G-C	W/W	cis
+D1953	D1962	G-C	outward
+D1954	D1955	5MU-PSU	upward
+D1954	D1958	T-A	W/H	trans
+D1956	D1957	C-A	upward
+D1958	D1961	A-C	upward
+D1959	D1960	U-U	upward
+D1961	D1962	C-C	upward
+D1962	D1963	C-C	upward
+D1963	D1964	C-C	upward
+D1964	D1965	C-G	upward
+D1965	D1966	G-U	upward
+D1966	D1967	U-C	upward
+D1968	D1969	G-C	upward
+D1969	D1970	C-G	upward
+D1970	D1971	G-G	upward
+D1971	D1972	G-A	upward
