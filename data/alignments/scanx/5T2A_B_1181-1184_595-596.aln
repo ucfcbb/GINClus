@@ -1,0 +1,29 @@
+
+#  Aligning       :: 5T2A_B:1181-1184_595-596 and 5XXU_2:310-315_347-354:
+#  Alignment score:  5.6
+#  P-value:  NA
+#  Query aligned region: 0-0,2-3
+#  Target aligned region: 4-4,7-8
+
+	UCC
+	AAG
+
+#  Matched base-pairing interactions: 
+	<U(0:)-C(2:) cis S/H>                          MATCHES	<A(4:)-A(7:) trans S/S>
+#  Matched base-stacking interactions: 
+	<U(0:)-C(3:) upward>                           MATCHES	<A(4:)-G(8:) upward>
+Total Elapsed Time : 0.007431 sec (copied)
+
+#  Aligning       :: 5T2A_B:1181-1184_595-596 and 5XXU_2:347-354_310-315:
+#  Alignment score:  3.4
+#  P-value:  NA
+#  Query aligned region: 0-0,2-3,4-4
+#  Target aligned region: 6-6,11-12,13-13
+
+	UCCG
+	CCAG
+
+#  Matched base-pairing interactions: 
+	<U(0:)-C(2:) cis S/H>                          MATCHES	<C(6:)-C(11:) cis W/W>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.007704 sec (copied)

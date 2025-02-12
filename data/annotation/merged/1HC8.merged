@@ -1,0 +1,184 @@
+C101	C102	GTP-C	upward
+C101	C158	G-U	W/W	cis
+C102	C103	C-C	upward
+C102	C157	C-G	W/W	cis
+C103	C104	C-A	upward
+C103	C156	C-G	W/W	cis
+C103	C157	C-G	outward
+C104	C105	A-G	upward
+C104	C155	A-U	W/W	cis
+C104	C156	A-G	outward
+C105	C106	G-G	upward
+C105	C135	G-A	S/S	trans
+C105	C154	G-C	W/W	cis
+C105	C155	G-U	outward
+C106	C152	G-C	inward
+C106	C153	G-A	S/H	trans
+C106	C154	G-C	outward
+C107	C108	A-U	upward
+C107	C131	A-U	W/W	cis
+C107	C136	A-A	outward
+C108	C130	U-A	W/W	cis
+C109	C110	G-U	inward
+C109	C129	G-C	W/W	cis
+C109	C130	G-A	outward
+C110	C138	U-A	W/H	cis
+C111	C120	A-A	outward
+C112	C113	G-G	upward
+C112	C126	G-C	W/W	cis
+C112	C127	G-A	outward
+C112	C138	G-A	outward
+C113	C114	G-C	upward
+C113	C125	G-C	W/W	cis
+C113	C126	G-C	outward
+C114	C115	C-U	upward
+C114	C124	C-G	W/W	cis
+C115	C116	U-U	upward
+C115	C123	U-A	W/W	cis
+C117	C118	A-G	upward
+C118	C119	G-A	upward
+C119	C123	A-A	upward
+C121	C122	G-C	upward
+C121	C139	G-A	downward
+C121	C140	G-A	downward
+C121	C141	G-G	W/H	cis
+C122	C142	C-C	W/H	cis
+C122	C143	C-G	upward
+C123	C124	A-G	upward
+C124	C125	G-C	upward
+C125	C126	C-C	upward
+C126	C127	C-A	upward
+C127	C128	A-U	upward
+C127	C138	A-A	S/S	trans
+C129	C130	C-A	upward
+C129	C138	C-A	downward
+C130	C131	A-U	upward
+C131	C132	U-U	upward
+C132	C133	U-U	upward
+C132	C136	U-A	W/W	trans
+C133	C135	U-A	S/H	trans
+C134	C135	A-A	upward
+C134	C155	A-U	S/S	cis
+C135	C136	A-A	inward
+C135	C154	A-C	S/S	cis
+C137	C139	G-A	upward
+C137	C140	G-A	upward
+C137	C152	G-C	W/W	cis
+C137	C153	G-A	outward
+C139	C140	A-A	S/H	cis
+C139	C151	A-U	S/H	trans
+C140	C141	A-G	upward
+C140	C151	A-U	W/W	cis
+C140	C152	A-C	outward
+C141	C142	G-C	upward
+C141	C150	G-C	W/W	cis
+C141	C151	G-U	outward
+C142	C143	C-G	upward
+C142	C149	C-G	W/W	cis
+C143	C144	G-U	upward
+C143	C148	G-A	S/H	trans
+C145	C146	A-A	upward
+C146	C147	A-U	upward
+C147	C148	U-A	upward
+C148	C149	A-G	upward
+C149	C150	G-C	upward
+C150	C151	C-U	upward
+C151	C152	U-C	upward
+C152	C153	C-A	upward
+C153	C154	A-C	upward
+C154	C155	C-U	upward
+C156	C157	G-G	upward
+C157	C158	G-U	upward
+D301	D302	GTP-C	upward
+D301	D358	G-U	W/W	cis
+D302	D303	C-C	upward
+D302	D357	C-G	W/W	cis
+D303	D304	C-A	upward
+D303	D356	C-G	W/W	cis
+D303	D357	C-G	outward
+D304	D305	A-G	upward
+D304	D355	A-U	W/W	cis
+D304	D356	A-G	outward
+D305	D306	G-G	upward
+D305	D335	G-A	S/S	trans
+D305	D354	G-C	W/W	cis
+D305	D355	G-U	outward
+D306	D352	G-C	inward
+D306	D353	G-A	S/H	trans
+D306	D354	G-C	outward
+D307	D308	A-U	upward
+D307	D331	A-U	W/W	cis
+D307	D336	A-A	outward
+D308	D330	U-A	W/W	cis
+D308	D331	U-U	outward
+D309	D310	G-U	inward
+D309	D329	G-C	W/W	cis
+D309	D330	G-A	outward
+D310	D338	U-A	W/H	cis
+D311	D320	A-A	outward
+D312	D313	G-G	upward
+D312	D326	G-C	W/W	cis
+D312	D327	G-A	outward
+D312	D338	G-A	outward
+D313	D314	G-C	upward
+D313	D325	G-C	W/W	cis
+D313	D326	G-C	outward
+D314	D315	C-U	upward
+D314	D324	C-G	W/W	cis
+D315	D316	U-U	upward
+D315	D323	U-A	W/W	cis
+D317	D318	A-G	upward
+D318	D319	G-A	upward
+D319	D323	A-A	upward
+D321	D322	G-C	upward
+D321	D339	G-A	downward
+D321	D340	G-A	downward
+D321	D341	G-G	W/H	cis
+D322	D342	C-C	W/H	cis
+D322	D343	C-G	upward
+D323	D324	A-G	upward
+D324	D325	G-C	upward
+D325	D326	C-C	upward
+D326	D327	C-A	upward
+D327	D328	A-U	upward
+D329	D330	C-A	upward
+D329	D338	C-A	downward
+D330	D331	A-U	upward
+D331	D332	U-U	upward
+D332	D333	U-U	upward
+D332	D336	U-A	W/W	trans
+D333	D335	U-A	S/H	trans
+D334	D335	A-A	upward
+D334	D355	A-U	S/S	cis
+D335	D336	A-A	inward
+D335	D354	A-C	S/S	cis
+D337	D339	G-A	upward
+D337	D340	G-A	upward
+D337	D352	G-C	W/W	cis
+D337	D353	G-A	outward
+D339	D340	A-A	S/H	cis
+D339	D351	A-U	S/H	trans
+D340	D341	A-G	upward
+D340	D351	A-U	W/W	cis
+D340	D352	A-C	outward
+D341	D342	G-C	upward
+D341	D350	G-C	W/W	cis
+D341	D351	G-U	outward
+D342	D343	C-G	upward
+D342	D349	C-G	W/W	cis
+D343	D344	G-U	upward
+D343	D348	G-A	S/H	trans
+D344	D347	U-U	S/H	trans
+D345	D346	A-A	upward
+D346	D347	A-U	upward
+D347	D348	U-A	upward
+D348	D349	A-G	upward
+D349	D350	G-C	upward
+D350	D351	C-U	upward
+D351	D352	U-C	upward
+D352	D353	C-A	upward
+D353	D354	A-C	upward
+D354	D355	C-U	upward
+D355	D356	U-G	upward
+D356	D357	G-G	upward
+D357	D358	G-U	upward

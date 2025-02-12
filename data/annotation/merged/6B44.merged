@@ -1,0 +1,112 @@
+M4	M5	A-G	upward
+M5	M6	G-A	upward
+M6	M7	A-A	upward
+M9	M10	U-U	upward
+M9	N32	U-A	W/W	cis
+M10	M11	U-C	upward
+M10	N31	U-A	W/W	cis
+M11	M12	C-A	upward
+M11	N30	C-G	W/W	cis
+M12	M13	A-C	upward
+M12	N28	A-DG	inward
+M12	N29	A-T	W/W	cis
+M13	N28	C-G	W/W	cis
+M15	M16	G-C	upward
+M15	N25	G-DG	inward
+M15	N26	G-C	W/W	cis
+M16	M17	C-G	upward
+M16	N25	C-G	W/W	cis
+M17	M18	G-G	upward
+M17	N24	G-C	W/W	cis
+M18	M19	G-G	upward
+M18	N23	G-C	W/W	cis
+M19	N22	G-C	W/W	cis
+M21	M22	U-U	upward
+M21	N20	U-A	W/W	cis
+M22	M23	U-G	upward
+M22	N19	U-A	W/W	cis
+M23	M24	G-A	upward
+M23	N18	G-C	W/W	cis
+M24	M25	A-U	upward
+M24	N16	A-DA	inward
+M24	N17	A-T	W/W	cis
+M25	N16	U-A	W/W	cis
+M27	M28	U-C	upward
+M27	N14	U-A	W/W	cis
+M28	M29	C-C	upward
+M28	N13	C-G	W/W	cis
+M29	M30	C-G	upward
+M29	N12	C-G	W/W	cis
+M30	M31	G-C	upward
+M30	N10	G-DG	inward
+M30	N11	G-C	W/W	cis
+M31	N10	C-G	W/W	cis
+M33	M34	U-C	upward
+M33	N8	U-A	W/W	cis
+M34	M35	C-U	upward
+M34	N6	C-DA	inward
+M34	N7	C-G	W/W	cis
+M35	M36	U-A	upward
+M35	N6	U-A	W/W	cis
+M36	M37	A-C	upward
+M36	N4	A-DG	inward
+M36	N5	A-T	W/W	cis
+M37	N4	C-G	W/W	cis
+M46	M60	C-G	W/W	cis
+M47	M48	U-G	upward
+M47	M59	U-A	W/H	trans
+M48	M49	G-C	upward
+M48	M58	G-C	W/W	cis
+M50	M51	C-G	upward
+M50	M56	C-G	outward
+M51	M55	G-A	inward
+M52	M53	U-G	upward
+N4	N5	DG-DT	upward
+N5	N6	DT-DA	upward
+N6	N7	DA-DG	upward
+N7	N8	DG-DA	upward
+N10	N11	DG-DC	upward
+N11	N12	DC-DG	upward
+N12	N13	DG-DG	upward
+N13	N14	DG-DA	upward
+N16	N17	DA-DT	upward
+N17	N18	DT-DC	upward
+N18	N19	DC-DA	upward
+N19	N20	DA-DA	upward
+N22	N23	DC-DC	upward
+N23	N24	DC-DC	upward
+N24	N25	DC-DG	upward
+N25	N26	DG-DC	upward
+N28	N29	DG-DT	upward
+N29	N30	DT-DG	upward
+N30	N31	DG-DA	upward
+N31	N32	DA-DA	upward
+N33	N34	DG-DG	upward
+N33	O17	G-C	W/W	cis
+N34	N35	DG-DT	upward
+N34	O16	G-C	W/W	cis
+N35	N36	DT-DG	upward
+N35	O15	T-A	W/W	cis
+N36	N37	DG-DA	upward
+N36	O14	G-C	W/W	cis
+N37	N38	DA-DT	upward
+N37	O13	A-T	W/W	cis
+N38	N39	DT-DG	upward
+N38	O12	T-A	W/W	cis
+N39	N40	DG-DA	upward
+N39	O11	G-C	W/W	cis
+N40	N41	DA-DC	upward
+N40	O10	A-T	W/W	cis
+N41	N42	DC-DT	upward
+N41	O9	C-G	W/W	cis
+N42	O7	T-C	W/W	cis
+O7	O8	DC-DA	upward
+O9	O10	DG-DT	upward
+O10	O11	DT-DC	upward
+O11	O12	DC-DA	upward
+O12	O13	DA-DT	upward
+O13	O14	DT-DC	upward
+O14	O15	DC-DA	upward
+O15	O16	DA-DC	upward
+O16	O17	DC-DC	upward
+O17	O18	DC-DA	inward

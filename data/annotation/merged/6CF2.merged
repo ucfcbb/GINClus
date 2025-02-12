@@ -1,0 +1,50 @@
+G1	G2	G-G	upward
+G1	G35	G-C	W/W	cis
+G2	G3	G-C	upward
+G2	G34	G-C	W/W	cis
+G2	G35	G-C	outward
+G3	G4	C-U	upward
+G3	G33	C-G	W/W	cis
+G4	G5	U-G	upward
+G4	G32	U-A	W/W	cis
+G4	G33	U-G	outward
+G5	G6	G-G	upward
+G5	G31	G-C	W/W	cis
+G5	G32	G-A	outward
+G6	G7	G-A	inward
+G6	G30	G-A	W/W	cis
+G7	G8	A-C	outward
+G8	G9	C-U	upward
+G8	G27	C-G	W/W	cis
+G9	G10	U-C	upward
+G9	G26	U-A	W/W	cis
+G9	G27	U-G	outward
+G10	G25	C-G	W/W	cis
+G10	G26	C-A	outward
+G11	G12	G-U	upward
+G11	G22	G-C	W/W	cis
+G11	G25	G-G	outward
+G12	G13	U-A	upward
+G12	G21	U-A	W/W	cis
+G13	G14	A-C	upward
+G13	G20	A-U	W/W	cis
+G13	G21	A-A	outward
+G14	G15	C-U	upward
+G14	G19	C-G	W/W	cis
+G15	G17	U-C	upward
+G15	G18	U-G	S/H	trans
+G18	G19	G-G	upward
+G19	G20	G-U	upward
+G20	G21	U-A	upward
+G21	G22	A-C	upward
+G23	G25	U-G	downward
+G23	G26	U-A	W/H	cis
+G25	G26	G-A	upward
+G26	G27	A-G	upward
+G27	G28	G-A	upward
+G28	G30	A-A	upward
+G30	G31	A-C	upward
+G31	G32	C-A	upward
+G32	G33	A-G	upward
+G33	G34	G-C	upward
+G34	G35	C-C	upward

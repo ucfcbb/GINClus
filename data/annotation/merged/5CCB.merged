@@ -1,0 +1,110 @@
+N0	N1	G-G	upward
+N0	N73	G-G	H/S	trans
+N0	N74	G-C	downward
+N0	N75	G-C	W/W	cis
+N1	N2	G-C	upward
+N1	N72	G-C	W/W	cis
+N1	N73	G-G	outward
+N1	N76	G-A	S/H	trans
+N2	N3	C-C	upward
+N2	N71	C-G	W/W	cis
+N3	N4	C-C	upward
+N3	N70	C-G	W/W	cis
+N3	N71	C-G	outward
+N4	N69	C-G	W/W	cis
+N4	N70	C-G	outward
+N5	N6	G-G	upward
+N5	N68	G-C	W/W	cis
+N5	N69	G-G	outward
+N6	N7	G-A	upward
+N6	N67	G-U	W/W	cis
+N6	N68	G-C	outward
+N7	N49	A-C	upward
+N7	N66	A-U	W/W	cis
+N8	N21	U-A	W/W	trans
+N8	N46	U-G	inward
+N8	N48	U-C	outward
+N9	N23	A-A	H/H	trans
+N9	N45	A-G	inward
+N9	N46	A-G	outward
+N10	N11	G-C	upward
+N10	N25	G-C	W/W	cis
+N10	N45	G-G	H/S	cis
+N11	N12	C-U	upward
+N11	N24	C-G	W/W	cis
+N12	N13	U-C	upward
+N12	N23	U-A	W/W	cis
+N12	N24	U-G	outward
+N13	N14	C-A	upward
+N13	N22	C-G	W/W	cis
+N13	N23	C-A	outward
+N14	N20	A-U	inward
+N14	N22	A-G	outward
+N15	N19	G-G	upward
+N17	N19	C-G	downward
+N21	N46	A-G	inward
+N21	N48	A-C	outward
+N22	N23	G-A	upward
+N22	N46	G-G	H/W	trans
+N23	N24	A-G	upward
+N24	N25	G-C	upward
+N24	N45	G-G	H/W	trans
+N25	N26	C-A	upward
+N26	N27	A-U	upward
+N26	N44	A-G	W/W	cis
+N27	N28	U-C	upward
+N27	N43	U-A	W/W	cis
+N28	N29	C-A	upward
+N28	N42	C-G	W/W	cis
+N29	N30	A-G	upward
+N29	N41	A-U	W/W	cis
+N29	N42	A-G	outward
+N30	N31	G-A	upward
+N30	N40	G-C	W/W	cis
+N30	N41	G-U	outward
+N31	N32	A-C	upward
+N31	N39	A-U	W/W	cis
+N32	N33	C-U	upward
+N32	N38	C-A	W/W	cis
+N33	N35	U-U	upward
+N33	N37	U-A	W/W	cis
+N35	N37	U-A	outward
+N37	N38	A-A	upward
+N38	N39	A-U	upward
+N39	N40	U-C	upward
+N40	N41	C-U	upward
+N41	N42	U-G	upward
+N42	N43	G-A	upward
+N43	N44	A-G	upward
+N44	N45	G-G	upward
+N49	N50	C-A	upward
+N49	N65	C-G	W/W	cis
+N50	N51	A-G	upward
+N50	N64	A-U	W/W	cis
+N50	N65	A-G	outward
+N51	N52	G-G	upward
+N51	N63	G-C	W/W	cis
+N51	N64	G-U	outward
+N52	N53	G-G	upward
+N52	N62	G-C	W/W	cis
+N52	N63	G-C	outward
+N53	N54	G-U	upward
+N53	N61	G-C	W/W	cis
+N53	N62	G-C	outward
+N54	N59	U-G	W/W	trans
+N55	N59	U-G	downward
+N56	N58	C-A	upward
+N59	N61	G-C	outward
+N61	N62	C-C	upward
+N62	N63	C-C	upward
+N63	N64	C-U	upward
+N64	N65	U-G	upward
+N65	N66	G-U	upward
+N66	N67	U-U	upward
+N67	N68	U-C	upward
+N68	N69	C-G	upward
+N69	N70	G-G	upward
+N70	N71	G-G	upward
+N71	N72	G-C	upward
+N72	N73	C-G	upward
+N73	N74	G-C	inward

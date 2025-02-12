@@ -1,0 +1,63 @@
+
+#  Aligning       :: 3J7Q_5:1043-1046_1024-1027 and 4W29_AX:48-50_62-64:
+#  Alignment score:  3.2
+#  P-value:  NA
+#  Query aligned region: 1-1,6-6
+#  Target aligned region: 1-1,4-4
+
+	GA
+	GU
+
+#  Matched base-pairing interactions: 
+	<G(1:)-A(6:) trans S/H>                        MATCHES	<G(1:)-U(4:) trans H/W>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.001951 sec
+
+#  Aligning       :: 3J7Q_5:1043-1046_1024-1027 and 4W29_AX:62-64_48-50:
+#  Alignment score:  3.2
+#  P-value:  NA
+#  Query aligned region: 2-2,5-5
+#  Target aligned region: 1-1,4-4
+
+	AG
+	UG
+
+#  Matched base-pairing interactions: 
+	<A(2:)-G(5:) trans H/S>                        MATCHES	<U(1:)-G(4:) trans W/H>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.001918 sec
+
+#  Aligning       :: 3J7Q_5:1043-1046_1024-1027 and 4IOA_X:2614-2618_2753-2761:
+#  Alignment score:  83.8
+#  P-value:  NA
+#  Query aligned region: 1-3,4-6
+#  Target aligned region: 2-4,5-9
+
+	GAGCG--A
+	GAGCAAGA
+
+#  Matched base-pairing interactions: 
+	<A(2:)-G(5:) trans H/S>                        MATCHES	<A(3:)-A(6:) trans H/S>
+	<G(1:)-A(6:) trans S/H>                        MATCHES	<G(2:)-A(9:) trans S/H>
+#  Matched base-stacking interactions: 
+	<G(3:)-G(5:) outward>                          MATCHES	<G(4:)-A(6:) outward>
+	<G(1:)-G(5:) inward>                           MATCHES	<G(2:)-A(6:) inward>
+	<A(2:)-A(6:) outward>                          MATCHES	<A(3:)-A(9:) outward>
+Total Elapsed Time : 0.041037 sec (copied)
+
+#  Aligning       :: 3J7Q_5:1043-1046_1024-1027 and 4IOA_X:2753-2761_2614-2618:
+#  Alignment score:  73.7
+#  P-value:  NA
+#  Query aligned region: 1-2,5-6
+#  Target aligned region: 1-4,11-12
+
+	G--AGA
+	AAGAGA
+
+#  Matched base-pairing interactions: 
+	<A(2:)-G(5:) trans H/S>                        MATCHES	<A(4:)-G(11:) trans H/S>
+	<G(1:)-A(6:) trans S/H>                        MATCHES	<A(1:)-A(12:) trans S/H>
+#  Matched base-stacking interactions: 
+	<G(1:)-G(5:) inward>                           MATCHES	<A(1:)-G(11:) inward>
+	<A(2:)-A(6:) outward>                          MATCHES	<A(4:)-A(12:) outward>
+Total Elapsed Time : 0.039545 sec (copied)

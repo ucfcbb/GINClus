@@ -1,0 +1,56 @@
+
+#  Aligning       :: 4W29_AX:62-64_48-50 and 3J7Q_5:1043-1046_1024-1027:
+#  Alignment score:  3.2
+#  P-value:  NA
+#  Query aligned region: 1-1,4-4
+#  Target aligned region: 2-2,5-5
+
+	UG
+	AG
+
+#  Matched base-pairing interactions: 
+	<U(1:)-G(4:) trans W/H>                        MATCHES	<A(2:)-G(5:) trans H/S>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.001918 sec (copied)
+
+#  Aligning       :: 4W29_AX:62-64_48-50 and 4IOA_X:2614-2618_2753-2761:
+#  Alignment score:  12.2
+#  P-value:  NA
+#  Query aligned region: 1-1,4-4
+#  Target aligned region: 1-1,7-7
+
+	UG
+	UA
+
+#  Matched base-pairing interactions: 
+	<U(1:)-G(4:) trans W/H>                        MATCHES	<U(1:)-A(7:) trans W/H>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.004953 sec (copied)
+
+#  Aligning       :: 4W29_AX:62-64_48-50 and 4IOA_X:2753-2761_2614-2618:
+#  Alignment score:  4.5
+#  P-value:  NA
+#  Query aligned region: 1-2,3-4
+#  Target aligned region: 2-8,9-10
+
+	UCGG
+	AGUU
+
+#  Matched base-pairing interactions: 
+	<U(1:)-G(4:) trans W/H>                        MATCHES	<A(2:)-U(10:) trans H/W>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.005073 sec (copied)
+
+#  Aligning       :: 4W29_AX:62-64_48-50 and 3J7Q_5:1024-1027_1043-1046:
+#  Alignment score:  3.2
+#  P-value:  NA
+#  Query aligned region: 1-1,4-4
+#  Target aligned region: 2-2,5-5
+
+	UG
+	AG
+
+#  Matched base-pairing interactions: 
+	<U(1:)-G(4:) trans W/H>                        MATCHES	<A(2:)-G(5:) trans H/S>
+#  Matched base-stacking interactions: 
+Total Elapsed Time : 0.002064 sec (copied)
