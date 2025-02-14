@@ -1,0 +1,102 @@
+M1	M2	G-C	upward
+M1	M35	G-C	W/W	cis
+M2	M3	C-C	upward
+M2	M34	C-G	W/W	cis
+M3	M4	C-C	upward
+M3	M33	C-G	W/W	cis
+M3	M34	C-G	outward
+M4	M5	C-G	upward
+M4	M32	C-G	W/W	cis
+M4	M33	C-G	outward
+M5	M6	G-G	upward
+M5	M31	G-C	W/W	cis
+M5	M32	G-G	outward
+M6	M7	G-A	upward
+M6	M30	G-C	W/W	cis
+M6	M31	G-C	outward
+M7	M8	A-U	upward
+M7	M29	A-U	W/W	cis
+M8	M28	U-G	W/W	cis
+M9	M10	A-G	upward
+M9	M15	A-C	inward
+M9	M16	A-U	downward
+M10	M13	G-U	inward
+M10	M15	G-C	W/W	cis
+M16	M17	U-U	upward
+M16	M27	U-A	W/W	cis
+M17	M18	U-G	upward
+M17	M26	U-A	W/W	cis
+M17	M27	U-A	outward
+M18	M19	G-G	upward
+M18	M25	G-C	W/W	cis
+M18	M26	G-A	outward
+M19	M20	G-G	upward
+M19	M24	G-C	W/W	cis
+M19	M25	G-C	outward
+M20	M24	G-C	outward
+M22	M23	A-A	downward
+M24	M25	C-C	upward
+M26	M27	A-A	upward
+M27	M28	A-G	upward
+M28	M29	G-U	upward
+M29	M30	U-C	upward
+M30	M31	C-C	upward
+M31	M32	C-G	upward
+M32	M33	G-G	upward
+M33	M34	G-G	upward
+M34	M35	G-C	upward
+M35	M36	C-A	upward
+M36	M37	A-C	upward
+X1	X2	G-C	upward
+X1	X35	G-C	W/W	cis
+X1	X36	G-A	outward
+X2	X3	C-C	upward
+X2	X34	C-G	W/W	cis
+X3	X4	C-C	upward
+X3	X33	C-G	W/W	cis
+X3	X34	C-G	outward
+X4	X5	C-G	upward
+X4	X32	C-G	W/W	cis
+X4	X33	C-G	outward
+X5	X6	G-G	upward
+X5	X31	G-C	W/W	cis
+X5	X32	G-G	outward
+X6	X7	G-A	upward
+X6	X30	G-C	W/W	cis
+X6	X31	G-C	outward
+X7	X8	A-U	upward
+X7	X29	A-U	W/W	cis
+X8	X28	U-G	W/W	cis
+X9	X10	A-G	upward
+X9	X15	A-C	inward
+X9	X16	A-U	downward
+X10	X15	G-C	W/W	cis
+X16	X17	U-U	upward
+X16	X27	U-A	W/W	cis
+X16	X28	U-G	outward
+X17	X18	U-G	upward
+X17	X26	U-A	W/W	cis
+X17	X27	U-A	outward
+X18	X19	G-G	upward
+X18	X25	G-C	W/W	cis
+X18	X26	G-A	outward
+X19	X20	G-G	upward
+X19	X24	G-C	W/W	cis
+X19	X25	G-C	outward
+X20	X23	G-A	W/W	trans
+X20	X24	G-C	outward
+X21	X22	A-A	outward
+X22	X23	A-A	downward
+X24	X25	C-C	upward
+X25	X26	C-A	upward
+X26	X27	A-A	upward
+X27	X28	A-G	upward
+X28	X29	G-U	upward
+X29	X30	U-C	upward
+X30	X31	C-C	upward
+X31	X32	C-G	upward
+X32	X33	G-G	upward
+X33	X34	G-G	upward
+X34	X35	G-C	upward
+X36	X37	A-C	upward
+X37	X38	C-C	upward

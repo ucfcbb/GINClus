@@ -1,0 +1,114 @@
+E1	E2	G-C	upward
+E1	E72	G-C	W/W	cis
+E2	E3	C-C	upward
+E2	E71	C-G	W/W	cis
+E3	E4	C-C	upward
+E3	E70	C-G	W/W	cis
+E3	E71	C-G	outward
+E4	E5.A	C-G	upward
+E4	E69	C-G	W/W	cis
+E4	E70	C-G	outward
+E5.A	E5.B	G-G	upward
+E5.A	E68	G-C	W/W	cis
+E5.A	E69	G-G	outward
+E5.B	E5.C	G-A	upward
+E5.B	E67.B	G-U	W/W	cis
+E5.B	E68	G-C	outward
+E5.C	E6	A-U	upward
+E5.C	E67.A	A-U	W/W	cis
+E6	E7	U-G	upward
+E6	E66	U-U	W/W	cis
+E7	E50	G-G	upward
+E7	E65	G-C	W/W	cis
+E7	E66	G-U	outward
+E10	E11	C-C	upward
+E10	E25	C-G	W/W	cis
+E11	E12	C-U	upward
+E11	E24	C-G	W/W	cis
+E11	E25	C-G	outward
+E12	E13	U-C	upward
+E12	E23	U-G	W/W	cis
+E12	E24	U-G	outward
+E13	E14	C-A	upward
+E13	E22	C-G	W/W	cis
+E13	E23	C-G	outward
+E14	E15	A-G	upward
+E14	E21	A-U	W/W	cis
+E14	E22	A-G	outward
+E15	E16	G-U	upward
+E15	E20.A	G-C	W/W	cis
+E15	E21	G-U	outward
+E16	E59	U-U	W/W	trans
+E16	E60	U-U	upward
+E18	E55	G-U	W/S	trans
+E18	E57	G-A	inward
+E18	E58	G-A	outward
+E19	E20	G-U	S/H	cis
+E19	E56	G-C	W/W	cis
+E19	E57	G-A	outward
+E20.A	E21	C-U	upward
+E20.A	E59	C-U	outward
+E21	E22	U-G	upward
+E22	E23	G-G	upward
+E23	E24	G-G	upward
+E24	E25	G-G	upward
+E25	E26	G-U	upward
+E26	E27	U-G	upward
+E27	E28	G-C	upward
+E27	E43	G-U	W/W	cis
+E28	E29	C-A	upward
+E28	E42	C-G	W/W	cis
+E29	E30	A-G	upward
+E29	E41	A-U	W/W	cis
+E29	E42	A-G	outward
+E30	E40	G-C	W/W	cis
+E30	E41	G-U	outward
+E38	E39	A-C	upward
+E39	E40	C-C	upward
+E40	E41	C-U	upward
+E41	E42	U-G	upward
+E42	E43	G-U	upward
+E46.B	E46.C	U-G	upward
+E46.B	E47	U-A	W/W	cis
+E46.B	E48	U-G	outward
+E46.C	E46.D	G-U	upward
+E46.C	E46.L	G-C	W/W	cis
+E46.C	E47	G-A	outward
+E46.D	E46.E	U-C	upward
+E46.D	E46.K	U-A	W/W	cis
+E46.E	E46.F	C-U	upward
+E46.E	E46.J	C-G	W/W	cis
+E46.F	E46.I	U-C	W/H	trans
+E46.J	E46.K	G-A	upward
+E46.K	E46.L	A-C	upward
+E46.L	E47	C-A	upward
+E47	E48	A-G	upward
+E50	E51	G-U	upward
+E50	E64	G-C	W/W	cis
+E50	E65	G-C	outward
+E51	E52	U-G	upward
+E51	E63	U-A	W/W	cis
+E52	E53	G-G	upward
+E52	E62	G-C	W/W	cis
+E52	E63	G-A	outward
+E53	E54	G-U	upward
+E53	E61	G-C	W/W	cis
+E53	E62	G-C	outward
+E54	E55	U-U	upward
+E54	E58	U-A	W/H	trans
+E56	E57	C-A	upward
+E58	E61	A-C	upward
+E59	E60	U-U	upward
+E61	E62	C-C	upward
+E62	E63	C-A	upward
+E63	E64	A-C	upward
+E64	E65	C-C	upward
+E65	E66	C-U	upward
+E66	E67.A	U-U	upward
+E67.A	E67.B	U-U	upward
+E67.B	E68	U-C	upward
+E68	E69	C-G	upward
+E69	E70	G-G	upward
+E70	E71	G-G	upward
+E71	E72	G-C	upward
+E72	E73	C-G	inward

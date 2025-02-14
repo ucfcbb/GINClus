@@ -1,0 +1,73 @@
+C404	C405	C-U	upward
+C404	C420	C-G	W/W	cis
+C404	D420	C-G	downward
+C405	C406	U-G	upward
+C405	C419	U-A	W/W	cis
+C405	C420	U-G	outward
+C406	C407	G-U	upward
+C406	C418	G-C	W/W	cis
+C406	C419	G-A	outward
+C407	C408	U-G	upward
+C407	C417	U-A	W/W	cis
+C408	C409	G-U	upward
+C408	C416	G-C	W/W	cis
+C408	C417	G-A	outward
+C409	C413	U-A	W/H	trans
+C411	C412	C-G	inward
+C413	C416	A-C	upward
+C414	C415	U-C	upward
+C416	C417	C-A	upward
+C417	C418	A-C	upward
+C418	C419	C-A	upward
+C419	C420	A-G	upward
+C420	E404	G-C	upward
+D404	D405	C-U	upward
+D404	E420	C-G	W/W	cis
+D405	D406	U-G	upward
+D405	E419	U-A	W/W	cis
+D405	E420	U-G	outward
+D406	D407	G-U	upward
+D406	E418	G-C	W/W	cis
+D406	E419	G-A	outward
+D407	D408	U-G	upward
+D407	E417	U-A	W/W	cis
+D408	D412	G-G	upward
+D408	E416	G-C	W/W	cis
+D408	E417	G-A	outward
+D412	D413	G-A	upward
+D412	E415	G-C	W/W	cis
+D412	E416	G-C	outward
+D413	D414	A-U	upward
+D413	E414	A-U	W/W	cis
+D413	E415	A-C	outward
+D414	D415	U-C	upward
+D414	E413	U-A	W/W	cis
+D415	D416	C-C	upward
+D415	E412	C-G	W/W	cis
+D415	E413	C-A	outward
+D416	D417	C-A	upward
+D416	E408	C-G	W/W	cis
+D416	E412	C-G	outward
+D417	D418	A-C	upward
+D417	E407	A-U	W/W	cis
+D417	E408	A-G	outward
+D418	D419	C-A	upward
+D418	E406	C-G	W/W	cis
+D419	D420	A-G	upward
+D419	E405	A-U	W/W	cis
+D419	E406	A-G	outward
+D420	E404	G-C	W/W	cis
+D420	E405	G-U	outward
+E404	E405	C-U	upward
+E405	E406	U-G	upward
+E406	E407	G-U	upward
+E407	E408	U-G	upward
+E408	E412	G-G	upward
+E412	E413	G-A	upward
+E413	E414	A-U	upward
+E414	E415	U-C	upward
+E415	E416	C-C	upward
+E416	E417	C-A	upward
+E417	E418	A-C	upward
+E418	E419	C-A	upward
+E419	E420	A-G	upward

@@ -1,0 +1,112 @@
+B-19	B-10	A-U	inward
+B-18	B-10	A-U	H/W	trans
+B-18	B-6	A-G	upward
+B-17	B-14	U-C	inward
+B-17	B-13	U-U	W/H	trans
+B-17	B-12	U-A	W/H	trans
+B-16	B-15	U-U	upward
+B-16	B-1	U-U	W/W	cis
+B-15	B-14	U-C	upward
+B-15	B-2	U-A	W/W	cis
+B-14	B-13	C-U	upward
+B-14	B-3	C-G	W/W	cis
+B-14	B-2	C-A	outward
+B-13	B-12	U-A	upward
+B-13	B-4	U-A	W/W	cis
+B-13	B-3	U-G	outward
+B-12	B-11	A-C	upward
+B-12	B-5	A-U	W/W	cis
+B-12	B-4	A-A	outward
+B-11	B-10	C-U	upward
+B-11	B-6	C-G	W/W	cis
+B-10	B-6	U-G	outward
+B-8	B-6	U-G	W/S	cis
+B-6	B-5	G-U	upward
+B-5	B-4	U-A	upward
+B-4	B-3	A-G	upward
+B-3	B-2	G-A	upward
+B-2	B-1	A-U	upward
+B0	B1	G-A	upward
+B0	C0	G-C	W/W	cis
+B1	B2	A-G	upward
+B1	C-1	A-T	W/W	cis
+B2	B3	G-A	upward
+B2	C-2	G-C	W/W	cis
+B3	B4	A-A	upward
+B3	C-3	A-T	W/W	cis
+B4	B5	A-G	upward
+B4	C-4	A-T	W/W	cis
+B5	B6	G-U	upward
+B5	C-5	G-C	W/W	cis
+B6	B7	U-C	upward
+B6	C-6	U-A	W/W	cis
+B7	B8	C-A	upward
+B7	C-7	C-G	W/W	cis
+B8	B9	A-U	upward
+B8	C-8	A-T	W/W	cis
+B8	C-7	A-DG	outward
+B9	B10	U-U	upward
+B9	C-9	U-A	W/W	cis
+B10	B11	U-U	upward
+B10	C-10	U-A	W/W	cis
+B11	B12	U-A	upward
+B11	C-11	U-A	W/W	cis
+B12	B13	A-A	upward
+B12	C-12	A-T	W/W	cis
+B12	C-11	A-DA	outward
+B13	B14	A-U	upward
+B13	C-13	A-T	W/W	cis
+B14	C-14	U-A	W/W	cis
+B15	B16	A-A	upward
+B15	C-15	A-T	W/W	cis
+B15	C-14	A-DA	outward
+B16	B17	A-G	upward
+B16	C-16	A-T	W/W	cis
+B17	B18	G-G	upward
+B17	C-17	G-C	W/W	cis
+B17	C-16	G-DT	outward
+B18	B19	G-C	upward
+B18	C-18	G-C	W/W	cis
+B18	C-17	G-DC	outward
+B19	C-19	C-G	W/W	cis
+C-19	C-18	DG-DC	upward
+C-17	C-16	DC-DT	upward
+C-16	C-15	DT-DT	upward
+C-15	C-14	DT-DA	upward
+C-14	C-13	DA-DT	upward
+C-13	C-12	DT-DT	upward
+C-12	C-11	DT-DA	upward
+C-11	C-10	DA-DA	upward
+C-10	C-9	DA-DA	upward
+C-9	C-8	DA-DT	upward
+C-8	C-7	DT-DG	upward
+C-7	C-6	DG-DA	upward
+C-6	C-5	DA-DC	upward
+C-5	C-4	DC-DT	upward
+C-4	C-3	DT-DT	upward
+C-3	C-2	DT-DC	upward
+C-2	C-1	DC-DT	upward
+C-1	C0	DT-DC	upward
+C1	C2	DG-DA	upward
+C1	D-2	DG-DT	inward
+C1	D-1	G-C	W/W	cis
+C2	C3	DA-DA	upward
+C2	D-2	A-T	W/W	cis
+C3	C4	DA-DA	upward
+C3	D-3	A-T	W/W	cis
+C4	C5	DA-DC	upward
+C4	D-4	A-T	W/W	cis
+C5	C6	DC-DA	upward
+C5	D-5	C-G	W/W	cis
+C6	C7	DA-DT	upward
+C6	D-6	A-T	W/W	cis
+C7	C8	DT-DG	upward
+C7	D-7	T-A	W/W	cis
+C8	D-8	G-C	W/W	cis
+D-8	D-7	DC-DA	upward
+D-7	D-6	DA-DT	upward
+D-6	D-5	DT-DG	upward
+D-5	D-4	DG-DT	upward
+D-4	D-3	DT-DT	upward
+D-3	D-2	DT-DT	upward
+D-2	D-1	DT-DC	upward
