@@ -108,7 +108,7 @@ PyMOL can also be installed directly by downloading the OS-specific version from
   -kinc [KINC]  	The increase in number of clusters at each step (starting from Kmin and upto Kmax) while calculating silhoutte score and SMCR. Default: 50.
   -q [Q]        	If True, generates Q-score for output subclusteres. Default: False.
   -p [P]        	If True, generates PyMOL images for output subclusteres. Default: False.
-  -pickle [PICKLE]     If True, reads previously generated alignment data from pickle files. Default: False.
+  -pickle [PICKLE]	If True, reads previously generated alignment data from pickle files. Default: False.
 
 ```
 
@@ -158,7 +158,7 @@ python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_lo
 
 
 **_Using GINClus on NRList relase 3.364:_**
-The input files Unknown_motif_location_IL_input_PDB_3.364.csv and Unknown_motif_location_HL_input_PDB_3.364.csv for NRList release 3.364 is provided inside folder [data/sample_input](data/sample_input). The clustering output for NRList release 3.364 is provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output). For internal loops, the output files are Subcluster_output_IL_NRList_3.364.csv and Subcluster_output_qscore_IL_NRList_3.364.csv. For hairpin loops, the output files are Subcluster_output_HL_NRList_3.364.csv and Subcluster_output_qscore_HL_NRList_3.364.csv. Commands to run GINClus for NRList release 3.364 is given below:
+The input files Unknown_motif_location_IL_input_PDB_3.364.csv(data/sample_input/Unknown_motif_location_IL_input_PDB_3.364.csv) and Unknown_motif_location_HL_input_PDB_3.364.csv(data/sample_input/Unknown_motif_location_HL_input_PDB_3.364.csv) for NRList release 3.364 is provided inside folder [data/sample_input](data/sample_input). The clustering output for NRList release 3.364 is provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output). For internal loops, the output files are Subcluster_output_IL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_IL_NRList_3.364.csv) and Subcluster_output_qscore_IL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_qscore_IL_NRList_3.364.csv). For hairpin loops, the output files are Subcluster_output_HL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_HL_NRList_3.364.csv) and Subcluster_output_qscore_HL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_qscore_HL_NRList_3.364.csv). Commands to run GINClus for NRList release 3.364 is given below:
 
 ```
 python3 run.py -i1 Train_motif_location_IL_input_PDB.csv -i2 IL_loops_PDB_3.364.csv -o output/ -idt pdb -d tool -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 850
@@ -168,7 +168,7 @@ python3 run.py -i1 Train_motif_location_HL_input_PDB.csv -i2 HL_loops_PDB_3.364.
        
 ### Important Notes
 *** The PDB files 6EK0 and 4P95 have recently become obsolete and the motifs previously collected from these RNA chains have been removed from the motif location input files.  
-*** The hairpin loop 6GAW_BB:11-23 has been filtered out due to having missing coordinates wile generating subclusters images for hairpin loops.  
+*** The hairpin loop 6GAW_BB:11-23 has been filtered out due to having missing coordinates while generating subclusters images for hairpin loops.  
 *** Input files containing motif locations are provided inside folder [data](data/) and [sample_input](data/sample_input/).  
 *** The GINClus clustering results for [internal loops](output/Subcluster_output_IL.xlsx) and [hairpin loops](output/Subcluster_output_HL.xlsx) discussed in the paper are provided inside folder [output](output/).  
 *** The GINClus clustering results for NRList release 3.364 of [internal loops](output/NRList_3.364_output/Subcluster_output_IL.xlsx) and [hairpin loops](output/NRList_3.364_output/Subcluster_output_HL.xlsx) discussed in the paper are provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output).  
