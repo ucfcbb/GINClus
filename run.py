@@ -74,7 +74,7 @@ def main():
 
     # Q-score generation params
     parser.add_argument('-q', nargs='?', default=False, const=True, help="If True, generates Q-score for output subclusteres. Default: False.")
-    parser.add_argument('-tmalign', nargs='?', default=True, const=False, help="If True, generates alignment files using TM-align for Q-score calculation. Default: True.")
+    # parser.add_argument('-tmalign', nargs='?', default=True, const=False, help="If True, generates alignment files using TM-align for Q-score calculation. Default: True.")
   
     # pymol image generation params
     parser.add_argument('-p', nargs='?', default=False, const=True, help="If True, generates PyMOL images for output subclusteres. Default: False.")

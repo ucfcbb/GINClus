@@ -86,29 +86,29 @@ PyMOL can also be installed directly by downloading the OS-specific version from
 **_Help command:_** python3 run.py -h  
 **_Optional arguments:_** 
 ```
-  -h, --help    show this help message and exit
-  -i1 [I1]      Input file containing training motif locations. Default:'Train_motif_location_IL_input_PDB.csv'.
-  -i2 [I2]      Input file containing motif candidate locations. Default:'Unknown_motif_location_IL_input_PDB.csv'.
-  -o [O]        Path to the output files. Default: 'output/'.
-  -e [E]        Number of extended residues beyond loop boundary to generate the loop.cif file. Default: 0.
-  -d [D]        Use 'tool' to generate annotation from DSSR tool, else use 'web' to generate annotation from DSSR website. Default: 'web'.
-  -idt [IDT]    Use 'fasta' if input motif index type is FASTA, else use 'pdb' if input motif index type is PDB. Default: 'pdb'.
-  -t [T]        Trains the model if t = True, else uses the previously trained model weight. To set the parameter to False use '-t'. Default: True.
-  -idx [IDX]    Divides data into train, validation and test. To divide randomly, set to '0'. To divide according to the paper for internal loops, set to '1'. To divide according to the paper for
-                hairpin loops, set to '2'. To define manually using the file 'Train_Validate_Test_data_list.csv' in data folder, set to '3'. Default: 0.
-  -w [W]        Use '1' to save the new model weight, otherwise, use '0'. Default: '1'.
-  -val [VAL]    Set the percentage of validation data. Default: '0.064'.
-  -test [TEST]  Set the percentage of test data. Default: '0.063'.
-  -f [F]        Generates features for unknown motifs if True, else uses the previously generated features. To set the parameter to False use '-f'. Default: True.
-  -c [C]        Generates cluster output if True, else uses the previously generated clustering output. To set the parameter to False use '-c'. Default: True.
-  -sc [SC]      Generates subcluster output if True, else uses the previously generated subcluster output. To set the parameter to False use '-sc'. Default: True.
-  -k [K]        Define the number of clusters (value of K) to be generated. Default: 400.
-  -s [S]        Generates the optimal value of K by calculating silhouette score and SMCR for different number of clusters between Kmax and Kmin. Default: False.
-  -kmin [KMIN]  The minimum number of clusters for which the silhoutte score and SMCR will be calculated. Default: 200.
-  -kmax [KMAX]  The maximum number of clusters for which the silhoutte score and SMCR will be calculated. Default: 400.
-  -kinc [KINC]  The increase in number of clusters at each step (starting from Kmin and upto Kmax) while calculating silhoutte score and SMCR. Default: 50.
-  -q [Q]        If True, generates Q-score output subclusteres. Default: False.
-  -p [P]        If True, generates PyMOL images for output subclusteres. Default: False.
+  -h, --help    	show this help message and exit
+  -i1 [I1]      	Input file containing training motif locations. Default:'Train_motif_location_IL_input_PDB.csv'.
+  -i2 [I2]      	Input file containing motif candidate locations. Default:'Unknown_motif_location_IL_input_PDB.csv'.
+  -o [O]        	Path to the output files. Default: 'output/'.
+  -e [E]        	Number of extended residues beyond loop boundary to generate the loop.cif file. Default: 0.
+  -d [D]        	Use 'tool' to generate annotation from DSSR tool, else use 'web' to generate annotation from DSSR website. Default: 'web'.
+  -idt [IDT]    	Use 'fasta' if input motif index type is FASTA, else use 'pdb' if input motif index type is PDB. Default: 'pdb'.
+  -t [T]        	Trains the model if t = True, else uses the previously trained model weight. To set the parameter to False use '-t'. Default: True.
+  -idx [IDX]    	Divides data into train, validation and test. To divide randomly, set to '0'. To divide according to the paper for internal loops, set to '1'. To divide according to the paper 				for hairpin loops, set to '2'. To define manually using the file 'Train_Validate_Test_data_list.csv' in data folder, set to '3'. Default: 0.
+  -w [W]        	Use '1' to save the new model weight, otherwise, use '0'. Default: '1'.
+  -val [VAL]    	Set the percentage of validation data. Default: '0.064'.
+  -test [TEST]  	Set the percentage of test data. Default: '0.063'.
+  -f [F]        	Generates features for unknown motifs if True, else uses the previously generated features. To set the parameter to False use '-f'. Default: True.
+  -c [C]        	Generates cluster output if True, else uses the previously generated clustering output. To set the parameter to False use '-c'. Default: True.
+  -sc [SC]      	Generates subcluster output if True, else uses the previously generated subcluster output. To set the parameter to False use '-sc'. Default: True.
+  -k [K]        	Define the number of clusters (value of K) to be generated. Default: 400.
+  -s [S]        	Generates the optimal value of K by calculating silhouette score and SMCR for different number of clusters between Kmax and Kmin. Default: False.
+  -kmin [KMIN]  	The minimum number of clusters for which the silhoutte score and SMCR will be calculated. Default: 200.
+  -kmax [KMAX]  	The maximum number of clusters for which the silhoutte score and SMCR will be calculated. Default: 400.
+  -kinc [KINC]  	The increase in number of clusters at each step (starting from Kmin and upto Kmax) while calculating silhoutte score and SMCR. Default: 50.
+  -q [Q]        	If True, generates Q-score for output subclusteres. Default: False.
+  -p [P]        	If True, generates PyMOL images for output subclusteres. Default: False.
+  -pickle [PICKLE]     If True, reads previously generated alignment data from pickle files. Default: False.
 
 ```
 
@@ -158,7 +158,7 @@ python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_lo
 
 
 **_Using GINClus on NRList relase 3.364:_**
-The input files Unknown_motif_location_IL_input_PDB_3.364.csv and Unknown_motif_location_HL_input_PDB_3.364.csv for NRList release 3.364 run is provided inside folder [sample_input/data](sample_input/data/). The clustering output for NRList release 3.364 is provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output). For internal loops, the output files are Subcluster_output_IL_NRList_3.364.csv and Subcluster_output_qscore_IL_NRList_3.364.csv. For hairpin loops, the output files are Subcluster_output_HL_NRList_3.364.csv and Subcluster_output_qscore_HL_NRList_3.364.csv. Commands to run GINClus for NRList release 3.364 is given below:
+The input files Unknown_motif_location_IL_input_PDB_3.364.csv and Unknown_motif_location_HL_input_PDB_3.364.csv for NRList release 3.364 is provided inside folder [data/sample_input](data/sample_input). The clustering output for NRList release 3.364 is provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output). For internal loops, the output files are Subcluster_output_IL_NRList_3.364.csv and Subcluster_output_qscore_IL_NRList_3.364.csv. For hairpin loops, the output files are Subcluster_output_HL_NRList_3.364.csv and Subcluster_output_qscore_HL_NRList_3.364.csv. Commands to run GINClus for NRList release 3.364 is given below:
 
 ```
 python3 run.py -i1 Train_motif_location_IL_input_PDB.csv -i2 IL_loops_PDB_3.364.csv -o output/ -idt pdb -d tool -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 850
