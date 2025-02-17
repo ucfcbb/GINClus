@@ -112,7 +112,7 @@ def main():
     kmin = int(args.kmin)
     kinc = int(args.kinc)
     qscore = args.q
-    tmalign_par = args.tmalign
+    #tmalign_par = args.tmalign
     generate_images = args.p
     previous_graph_file_reused = args.pickle
 
