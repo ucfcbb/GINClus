@@ -1,6 +1,6 @@
 # GINClus: RNA structural motif clustering using graph isomorphism network
 ###### Authors: Created by Nabila Shahnaz Khan in collaboration with Md Mahfuzur Rahaman and Shaojie Zhang
-GINClus source code is implemented using __Python 3.8.10__ and can be executed in __64-bit Linux__ machine. It is compatible with __Python 3.8.10-3.11.10__. For given RNA motif and motif candidate locations from PDB, GINClus generates the graph representation for each motif/motif candidate. Then, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate side-by-side and superimposed images of motifs for each subcluster (optional).  
+GINClus source code is implemented using __Python 3.8.10__ and can be executed in __64-bit Linux__ machine. It is compatible with __Python 3.8.10-3.11.10__. For given RNA motif and motif candidate locations from PDB, GINClus generates the graph representation for each motif/motif candidate. Then, it generates motif subclusters based on their structural (base interaction and 3D structure) similarity. It can also generate side-by-side and superimposed images of motifs for each subcluster along with Q-score (optional).  
 
 
 
@@ -20,7 +20,7 @@ sudo systemctl enable docker
 ```
 
 #### Run using Dockerfile
-After downloading/cloning GINClus from Github, run the following commands inside the downloaded GINClus folder to built the docker file and then to run GINClus.  
+After downloading/cloning GINClus from Github, run the following commands inside the downloaded GINClus folder to build the docker file image and then to run GINClus.  
 
 \# Build an image
 ```
@@ -94,7 +94,7 @@ PyMOL can also be installed directly by downloading the OS-specific version from
   -d [D]        	Use 'tool' to generate annotation from DSSR tool, else use 'web' to generate annotation from DSSR website. Default: 'web'.
   -idt [IDT]    	Use 'fasta' if input motif index type is FASTA, else use 'pdb' if input motif index type is PDB. Default: 'pdb'.
   -t [T]        	Trains the model if t = True, else uses the previously trained model weight. To set the parameter to False use '-t'. Default: True.
-  -idx [IDX]    	Divides data into train, validation and test. To divide randomly, set to '0'. To divide according to the paper for internal loops, set to '1'. To divide according to the paper 				for hairpin loops, set to '2'. To define manually using the file 'Train_Validate_Test_data_list.csv' in data folder, set to '3'. Default: 0.
+  -idx [IDX]    	Divides data into train, validation and test. To divide randomly, set to '0'. To divide according to the paper for internal loops, set to '1'. To divide according to the paper for hairpin loops, set to '2'. To define manually using the file 'Train_Validate_Test_data_list.csv' in data folder, set to '3'. Default: 0.
   -w [W]        	Use '1' to save the new model weight, otherwise, use '0'. Default: '1'.
   -val [VAL]    	Set the percentage of validation data. Default: '0.064'.
   -test [TEST]  	Set the percentage of test data. Default: '0.063'.
@@ -112,12 +112,12 @@ PyMOL can also be installed directly by downloading the OS-specific version from
 
 ```
 
-**_Input:_** GINClus takes the locations of known RNA motifs and RNA motif candidates (loop regions) as input from two separate input files inside the [data](data/) folder. Theses locations are expected to be in PDB index, but it can be changed into FASTA index by setting the "-idt" parameter to "fasta".
+**_Input:_** GINClus takes the locations of known RNA motifs and RNA motif candidates (loop regions) as input from two separate input files inside the [data](data/) folder. These locations are expected to be in PDB index, but it can be changed into FASTA index by setting the "-idt" parameter to "fasta".
 1. __Train_motif_location_input:__ contains the locations of RNA motifs used for training. These locations can be collected from PDB files. Each line in the input file starts with the family name, followed by RNA motif locations. The motif locations are provided using the format 'PDBID_CHAIN:locations'. Example motif location: '4LCK_B:66-71', '1U9S_A:61-64_86-87', '4RGE_C:10-13_24-25_40-43'. Example input files: 'Train_motif_location_IL_input_PDB.csv', 'Train_motif_location_HL_input_PDB.csv'.
 2. __Unknown_motif_location_input:__ contains the locations of RNA motif candidates. Uses the similar format as the file Train_motif_location_input files. Example input files: 'Unknown_motif_location_IL_input_PDB.csv', 'Unknown_motif_location_HL_input_PDB.csv'.
 
 
-**_Optional Input File:_** The optional input file example can be found inside the [data](data/) folder.
+**_Optional Input File:_** The optional input file example can be found inside the [data](data/) folder.  
 __Train_Validate_Test_data_list.csv:__ To manually define the locations of motifs that should be used for training, validation and testing, use this input file. The first section of the file contains the locations of the training motifs, the second section contains the locations of the validation motifs and the third section contains the locations of the testing motifs.
 
 
@@ -126,7 +126,7 @@ __Train_Validate_Test_data_list.csv:__ To manually define the locations of motif
 2. __Cluster_output.csv:__ contains the clustering output of RNA motifs generated by K-means clustering algorithm.
 3. __Subcluster_output.csv:__ contains the subclustering output of RNA motifs generated by Hierachical Agglomerative clustering algorithm.
 4. __Subcluster_output_qscore.csv:__ contans the Q-score (quality score) generated for each subcluster. Higher value of Q-score indicates better quality for a subcluster.
-5. __subcluster_images folder:__ contans the images generated for each subcluster. The images will be generated if PyMOL is installed and "-p" parameter used is while running GINClus.
+5. __subcluster_images folder:__ contans the images generated for each subcluster. The images will be generated if PyMOL is installed and "-p" parameter is used while running GINClus.
 
 
 **_Example run commands for sample input:_**
@@ -141,19 +141,19 @@ python3 run.py -i1 'Train_motif_location_HL_input_PDB.csv' -i2 'Unknown_motif_lo
 ```
 3. __For fasta index:__ 
 ```
-python3 run.py -i1 'sample_input/Train_motif_location_HL_input_FASTA.csv' -i2 'sample_input/Unknown_motif_location_HL_input_FASTA.csv' -o 'output/' -idt fasta -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 400
+python3 run.py -i1 'Train_motif_location_HL_input_FASTA.csv' -i2 'Unknown_motif_location_HL_input_FASTA.csv' -o 'output/' -idt fasta -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 400
 ```
 4. __For automatically calculating K value:__ 
-```
-python3 run.py -i1 'sample_input/Train_motif_location_HL_input_FASTA.csv' -i2 'sample_input/Unknown_motif_location_HL_input_FASTA.csv' -o 'output/' -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -s True -kmax 300 -kmin 600 -kinc 100
+``` 
+python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_location_IL_input_PDB.csv' -o 'output/' -idt pdb -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -s True -kmax 300 -kmin 600 -kinc 100
 ```
 5. __For image generation:__ 
 ```
-python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_location_IL_input_PDB.csv' -idx 1 -p
+python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_location_IL_input_PDB.csv' -d web -idx 1 -p
 ```
 6. __For Q-score generation:__ 
 ```
-python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_location_IL_input_PDB.csv' -q
+python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_location_IL_input_PDB.csv' -d web -q
 ```
 
 
@@ -161,8 +161,8 @@ python3 run.py -i1 'Train_motif_location_IL_input_PDB.csv' -i2 'Unknown_motif_lo
 The input files Unknown_motif_location_IL_input_PDB_3.364.csv(data/sample_input/Unknown_motif_location_IL_input_PDB_3.364.csv) and Unknown_motif_location_HL_input_PDB_3.364.csv(data/sample_input/Unknown_motif_location_HL_input_PDB_3.364.csv) for NRList release 3.364 is provided inside folder [data/sample_input](data/sample_input). The clustering output for NRList release 3.364 is provided inside folder [output/NRList_3.364_output](output/NRList_3.364_output). For internal loops, the output files are Subcluster_output_IL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_IL_NRList_3.364.xlsx) and Subcluster_output_qscore_IL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_qscore_IL_NRList_3.364.xlsx). For hairpin loops, the output files are Subcluster_output_HL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_HL_NRList_3.364.xlsx) and Subcluster_output_qscore_HL_NRList_3.364.csv(output/NRList_3.364_output/Subcluster_output_qscore_HL_NRList_3.364.xlsx). Commands to run GINClus for NRList release 3.364 is given below:
 
 ```
-python3 run.py -i1 Train_motif_location_IL_input_PDB.csv -i2 IL_loops_PDB_3.364.csv -o output/ -idt pdb -d tool -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 850
-python3 run.py -i1 Train_motif_location_HL_input_PDB.csv -i2 HL_loops_PDB_3.364.csv -o output/ -idt pdb -d tool -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 600
+python3 run.py -i1 Train_motif_location_IL_input_PDB.csv -i2 Unknown_motif_location_IL_input_PDB_3.364.csv -o output/ -idt pdb -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 850
+python3 run.py -i1 Train_motif_location_HL_input_PDB.csv -i2 Unknown_motif_location_HL_input_PDB_3.364.csv -o output/ -idt pdb -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 600
 ```
 
        
@@ -182,7 +182,7 @@ python3 run.py -i1 Train_motif_location_HL_input_PDB.csv -i2 HL_loops_PDB_3.364.
 
 ### Terms  
 Where appropriate, please cite the following GINClus paper:  
-Nabila et al. "GINClus: RNA Structural Motif Clustering Using Graph Isomorphism Network." 
+Nabila et al. "GINClus: RNA structural motif clustering using graph isomorphism network." 
 
 
 ### Contact
