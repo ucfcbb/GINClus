@@ -94,8 +94,8 @@ def get_resolved_dict(pdb_id, pairwise_dict, interaction_category_rank):
 			best_rank_interaction = ("", "")
 			for bp, interact in interactions:
 				if bp not in interaction_category_rank:
-					logger.error('ERROR: Problem in ' + pdb_id + '. Check bp ' + bp + '.')
-					sys.exit()
+					logger.error('Problem in ' + pdb_id + '. Check bp ' + bp + '.')
+					continue
 				if interact not in interaction_category_rank[bp]:
 					rank = len(interaction_category_rank[bp])
 				else:

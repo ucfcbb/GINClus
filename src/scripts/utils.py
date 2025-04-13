@@ -18,10 +18,10 @@ from my_log import *
 from classes import *
 
 def prepare_executables():
-    if output_env == 'local':
-        os.chdir(dssr_dir)
-        os.system('chmod +x x3dna-dssr')
-        os.chdir(root_dir)
+    # if output_env == 'local':
+    #     os.chdir(dssr_dir)
+    #     os.system('chmod +x x3dna-dssr')
+    #     os.chdir(root_dir)
 
     scanx_aln_executable_fn = 'align_ga'
     if platform.system() == 'Darwin':
