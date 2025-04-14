@@ -141,7 +141,7 @@ python3 run.py -i1 'Train_motif_location_HL_input_PDB.csv' -i2 'Unknown_motif_lo
 ```
 3. __For fasta index:__ 
 ```
-python3 run.py -i1 'Train_motif_location_HL_input_FASTA.csv' -i2 'Unknown_motif_location_HL_input_FASTA.csv' -o 'output/' -idt fasta -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 400
+python3 run.py -i1 'sample_input/Train_motif_location_HL_input_FASTA.csv' -i2 'sample_input/Unknown_motif_location_HL_input_FASTA.csv' -o 'output/' -idt fasta -d web -e 0 -idx 0 -w 1 -val 0.064 -test 0.063 -k 400
 ```
 4. __For automatically calculating K value:__ 
 ``` 
