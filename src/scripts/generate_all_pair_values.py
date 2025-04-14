@@ -134,7 +134,7 @@ def preprocess_subcluster_output():
 
     return len(clusters)
 
-def generate_all_pair_values(clusters, partial_pdbx_dir, input_index_type, generate_alignment):
+def generate_all_pair_values(clusters, partial_pdbx_dir, input_index_type):
 
     input_fname = 'output/temp/Subcluster_output.in'
     output_fname = 'output/temp/Subcluster_output_qscore_temp.csv'

@@ -193,7 +193,7 @@ def main():
     ### Generate qscore for each subcluster
     if qscore == True:
         print('Generating Q-score for each subcluster...')
-        generate_all_pair_values(clusters, partial_pdbx_dir, input_index_type, tmalign_par)
+        generate_all_pair_values(clusters, partial_pdbx_dir, input_index_type)
         print('Generating final Q-score.\n')
         calc_qscore_for_each_subcluster(SUBCLUSTER_NO)
 
@@ -413,7 +413,7 @@ def prepare_data_and_generate_graphs(user_input_fname, output_dir, partial_pdbx_
     prepare_loop_files(loop_node_list_str)    #chkd
     prepare_partial_pdbs(partial_pdbx_dir, loop_node_list_str, loop_cif_extension)
 
-    f = open(user_input_fname + ".pickle","wb")
+    f = open(input_fname + ".pickle","wb")
     pickle.dump(families, f)
     f.close()
 
@@ -783,7 +783,8 @@ def get_fam_id(loop, families):
 
 def output_to_file_v2(user_input_fname, graph_list, graph_dir, use_loop_name_in_graph_fname):
 
-    f = open(user_input_fname + ".pickle", 'rb')
+    input_fname = os.path.join(data_dir, user_input_fname)
+    f = open(input_fname + ".pickle", 'rb')
     known_families = pickle.load(f)
     f.close()
 

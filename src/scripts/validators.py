@@ -112,6 +112,11 @@ def is_valid_pickle(pickle_fname, clusters, alignment_tool):
         for c_id in clusters:
             loop_nodes = list(map(lambda x: strToNode(x), clusters[c_id]))
             node1 = loop_nodes[0]
+
+            if node1 not in cluster_alignment_data[c_id]:
+                print("Subcluster output is not same as the previous run. So, did not use pickle file, generating alignments.")
+                return False
+
             set_a = set(loop_nodes)
             set_b = set(list(cluster_alignment_data[c_id][node1].keys()) + [node1])
 
