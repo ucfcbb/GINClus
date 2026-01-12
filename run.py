@@ -654,22 +654,22 @@ def get_atom_coordinate(pdb_fn, residue_list):
 
         if (i, icode) not in my_residues:
             # ret.append(0)
-            backbone[(pdb_id, chain_id, index, icd)] = [0., 0., 0.]
-            sugar[(pdb_id, chain_id, index, icd)] = [0., 0., 0.]
+            backbone[(pdb_id, chain_id, i, icd)] = [0., 0., 0.]
+            sugar[(pdb_id, chain_id, i, icd)] = [0., 0., 0.]
         else:
             atom_coord = []
             for atom in backbone_atoms:
                 if atom in my_residues[(i, icode)]:
                     atom_coord.append(my_residues[(i, icode)][atom].get_vector())
 
-            backbone[(pdb_id, chain_id, index, icd)] = centroid(atom_coord)
+            backbone[(pdb_id, chain_id, i, icd)] = centroid(atom_coord)
 
             atom_coord = []
             for atom in sugar_atoms:
                 if atom in my_residues[(i, icode)]:
                     atom_coord.append(my_residues[(i, icode)][atom].get_vector())
 
-            sugar[(pdb_id, chain_id, index, icd)] = centroid(atom_coord)
+            sugar[(pdb_id, chain_id, i, icd)] = centroid(atom_coord)
 
     return backbone, sugar, structure
 
